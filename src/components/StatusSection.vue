@@ -14,7 +14,7 @@
                     <label>Age:</label>
                 </td>
                 <td>
-                    <p>{{ age }}</p>
+                    <p class="text-s">{{ age }}</p>
                 </td>
             </tr>
             <tr class="status-text__container-row text-s">
@@ -22,7 +22,7 @@
                     <label>Degree:</label>
                 </td>
                 <td>
-                    <p>MSc Media Technology, Leiden University</p>
+                    <p class="text-s">MSc Media Technology, Leiden University</p>
                 </td>
             </tr>
             <tr class="status-text__container-row text-s">
@@ -30,7 +30,7 @@
                     <label>Languages:</label>
                 </td>
                 <td>
-                    <p>Dutch, English</p>
+                    <p class="text-s">Dutch, English</p>
                 </td>
             </tr>
             <tr class="status-text__container-row text-s">
@@ -38,7 +38,7 @@
                     <label>Location:</label>
                 </td>
                 <td>
-                    <p>Rotterdam</p>
+                    <p class="text-s">Rotterdam</p>
                 </td>
             </tr>
         </table>

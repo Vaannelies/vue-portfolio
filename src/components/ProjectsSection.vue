@@ -13,43 +13,37 @@
           </div>
           <div class="project__card__list-item">
             <img class="project__card__list-item__picture" src="../assets//img/IMG_20230807_142920_Bokeh.png" />
-            Plotter crew planning
           </div>
           <div class="project__card__list-item">
             <img class="project__card__list-item__picture" src="../assets//img/IMG_20230807_142920_Bokeh.png" />
-            Offri recursive components
           </div>
         </div>
       </div>
       <div tabindex="0" class="project__card">
         <div class="project__card-content__wrapper">
           <h2 class="project__card-title text-l">back-end</h2>
-          <p class="project__card-subtitle text-xs">Mostly NodeJS, PHP</p>
+          <p class="project__card-subtitle text-xs">NodeJS, PHP</p>
         </div>
         <div class="project__card__list">
           <div class="project__card__list-item">
             <img class="project__card__list-item__picture" src="../assets//img/IMG_20230807_142920_Bokeh.png" />
-            Offri NodeJS module
           </div>
           <div class="project__card__list-item">
             <img class="project__card__list-item__picture" src="../assets//img/IMG_20230807_142920_Bokeh.png" />
-            Plotter PHP thing
           </div>
           <div class="project__card__list-item">
             <img class="project__card__list-item__picture" src="../assets//img/IMG_20230807_142920_Bokeh.png" />
-            Laravel dieren database
           </div>
         </div>
       </div>
       <div tabindex="0" class="project__card">
         <div class="project__card-content__wrapper">
           <h2 class="project__card-title text-l">UX</h2>
-          <p class="project__card-subtitle text-xs">collaborative design, interviews, brainstorming, creative sessions</p>
+          <p class="project__card-subtitle text-xs">...</p>
         </div>
         <div class="project__card__list">
           <div class="project__card__list-item">
             <img class="project__card__list-item__picture" src="../assets//img/IMG_20230807_142920_Bokeh.png" />
-            Plotter PHP thing
           </div>
         </div>
       </div>
@@ -61,7 +55,6 @@
         <div class="project__card__list">
           <div class="project__card__list-item">
             <img class="project__card__list-item__picture" src="../assets//img/IMG_20230807_142920_Bokeh.png" />
-            Laravel dieren database
           </div>
         </div>
       </div>
