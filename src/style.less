@@ -422,43 +422,20 @@ body {
 }
 
 
-.skills__container {
+.tools__container {
     width: 100%;
     padding: 40px 150px;
     background: #F7F7F7;
     border-radius: 15px;
-    /* height: fit-content;
-     max-height: 0px;
-     position: relative; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: 0fr;
     gap: 1rem;
-    /* column-gap: 22px;*/
     height: 100%;
     overflow: hidden;
     transition: height 0.4s ease-in;
-    /* padding: 20px 150px; */
     box-sizing: border-box;
 
-        /* display: grid;
-         grid-template-rows: 0fr;
-         transition: grid-template-rows 0.5s ease-out;
-        */
-
-      
-    /*   .inner {
-         overflow: hidden;
-       }*/
-
-    &.--open {
-        /* height: fit-content;
-         grid-template-rows: 2fr;
-         grid-template-rows: 1fr; */
-
-
-
-    }
       
     .grid-item {
         height: 64px;
@@ -470,29 +447,17 @@ body {
         font-family: 'Plus Jakarta Sans';
 
         border-radius: 4px;;
-        /* place-self: center;*/
         text-wrap: nowrap;
         box-sizing: border-box;
         color: black;
-        /* border-radius: 5px; */
         font-weight: bold;
         font-size: 16px;
         padding: 21px 20px;
-        /* box-shadow: 5px 5px 3px #0000004f; */
         overflow: hidden;
 
         margin-bottom: 5px;
 
-        /* color: white;
-         position: relative;
-         border: none;
-         padding: 10px 15px;
-         background: #3984ff;
-         border-radius: 10px;
-         font-weight: bold;
-         cursor: pointer;
-         overflow: hidden; */
-        
+   
         img {
             margin-right: 8px;
             width: 33px;
@@ -505,8 +470,6 @@ body {
             left: calc(var(--x, 0) * 1px - 50px);
             width: 100px;
             height: 100px;
-            /* background: radial-gradient(#001AFF, #3985ff00 80%);
-            mask-clip: ; */
             opacity: 0;
             transition: opacity 0.2s;
         }
@@ -516,9 +479,7 @@ body {
 
             }
         }
-        /* &:hover::after {
-             opacity: 0.4;
-         }*/
+      
     }
    
 }
@@ -615,72 +576,6 @@ footer {
     }
 }
 
-/* .skills__container-background {
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     z-index: -1;
-     background: #FF004C;
-     box-shadow: inset #68001f 1px 1px 10px;
-     padding: 20px 150px;
-     filter: contrast(150%) brightness(10%);
-     background-repeat: repeat;
-     background-size: auto;
-     background: 
-       linear-gradient(2deg, #0022ff6c, #0015ff6a),
-       url("data:image/svg+xml,%3Csvg viewBox='0 0 2500 2500' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-     box-sizing: border-box;
-
- }*/
-
-/*
-.projects__container {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-    column-gap: 22px;
-    overflow: hidden;
-    transition: height 1s ease-in;
-    padding: 20px 150px;
-    box-sizing: border-box;
-    box-shadow: inset #003450 1px 1px 10px;
-    background-attachment: fixed;
-    background-size: cover;
-    /* background-image: url('./assets/img/jonathan-gallegos-HoMqP_ldh-s-unsplash.jpg'); */
-    /* background-image: url('./assets/img/mont-blanc-bg.svg');*/
-
-    /*.grid-item {
-        height: 210px;
-        width: 300px;
-        display: flex;
-        align-items: center;
-        place-self: center;
-        text-wrap: nowrap;
-        box-sizing: border-box;
-        background: #FFFFFF;
-        border-radius: 5px;
-        font-weight: bold;
-        font-size: 16px;
-        padding: 21px 20px;
-
-        img {
-            margin-right: 8px;
-            width: 33px;
-        }
-    }
-    &.--open {
-        height: 100%;
-    }
-}*/
-
-
-.parallax {
-
-}
 @keyframes slide-down {
     0% {
         opacity: 0;

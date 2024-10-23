@@ -21,7 +21,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }, 1700);
   }
 
-  setSkillsContainerEventListener();
+  setToolsContainerEventListener();
 });
 
 function addChar(index: number, char: string, parent: HTMLElement) {
@@ -66,8 +66,8 @@ function loopEl(el: HTMLElement, a: number) {
   }
 }
 
-function setSkillsContainerEventListener() {
-  const skills = [
+function setToolsContainerEventListener() {
+  const tools = [
     { name: "Android Studio", image: new URL("./assets/img/logo-android.svg", import.meta.url).href },
     { name: "Arduino", image: new URL("./assets/img/logo-arduino.svg", import.meta.url).href  },
     { name: "git", image: new URL("./assets/img/logo-git.svg", import.meta.url).href  },
@@ -85,22 +85,22 @@ function setSkillsContainerEventListener() {
     { name: "Laravel", image: new URL("./assets/img/logo-laravel.svg", import.meta.url).href  },
   ];
 
-  let skillsContainerExpanded = false;
+  let toolsContainerExpanded = false;
   window.addEventListener("scroll", (event) => {
-    const skillsContainerEl: HTMLElement | null =
-      document.querySelector(".skills__container");
+    const toolsContainerEl: HTMLElement | null =
+      document.querySelector(".tools__container");
     const bottom: number =
-      skillsContainerEl?.getBoundingClientRect().bottom || 0;
-    if (bottom + 100 < window.innerHeight && !skillsContainerExpanded) {
-      skills.forEach((skill, i) => {
+      toolsContainerEl?.getBoundingClientRect().bottom || 0;
+    if (bottom + 100 < window.innerHeight && !toolsContainerExpanded) {
+      tools.forEach((tool, i) => {
         setTimeout(() => {
           const img = document.createElement("img");
-          img.src = skill.image;
+          img.src = tool.image;
           const div = document.createElement("div");
           div.className = "grid-item";
           div.appendChild(img);
-          div.append(skill.name);
-          skillsContainerEl?.appendChild(div);
+          div.append(tool.name);
+          toolsContainerEl?.appendChild(div);
           div.addEventListener("mousemove", (e: MouseEvent) => {
             const { x, y } = div.getBoundingClientRect();
             div.style.setProperty("--x", (e.clientX - x).toString());
@@ -110,10 +110,10 @@ function setSkillsContainerEventListener() {
         }, 50 * i);
       });
 
-      skillsContainerExpanded = true;
-      skillsContainerEl?.appendChild;
+      toolsContainerExpanded = true;
+      toolsContainerEl?.appendChild;
 
-      if (skillsContainerExpanded) {
+      if (toolsContainerExpanded) {
         const buttons: any = document.querySelectorAll(".grid-item");
         buttons.forEach((button: HTMLElement) => {
           button.addEventListener("mousemove", (e: MouseEvent) => {

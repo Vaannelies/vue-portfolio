@@ -1,6 +1,6 @@
 <template>
   <section-component :title="'tools'">
-    <div class="skills__container">
+    <div class="tools__container">
       <div class="grid-item">
           <img src="../assets/img/logo-vue.svg"/>
           Vue (2 + 3)
