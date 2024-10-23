@@ -88,7 +88,7 @@ function setToolsContainerEventListener() {
   let toolsContainerExpanded = false;
   window.addEventListener("scroll", (event) => {
     const toolsContainerEl: HTMLElement | null =
-      document.querySelector(".tools__container");
+      document.querySelector(".tools__container__wrapper");
     const bottom: number =
       toolsContainerEl?.getBoundingClientRect().bottom || 0;
     if (bottom + 100 < window.innerHeight && !toolsContainerExpanded) {
@@ -100,7 +100,7 @@ function setToolsContainerEventListener() {
           div.className = "grid-item";
           div.appendChild(img);
           div.append(tool.name);
-          toolsContainerEl?.appendChild(div);
+          toolsContainerEl?.children[0]?.appendChild(div);
           div.addEventListener("mousemove", (e: MouseEvent) => {
             const { x, y } = div.getBoundingClientRect();
             div.style.setProperty("--x", (e.clientX - x).toString());
