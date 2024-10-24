@@ -771,6 +771,50 @@ footer {
             }
         }
     }
+
+    .projects__container {
+        flex-direction: column;
+        .project__card {
+            height: 100px;
+            &:first-child {
+                border-radius: 20px 20px 0 0;
+            }
+            &:last-child {
+                border-radius: 0 0 20px 20px;
+            }
+            .project__card-content__wrapper {
+                height: 100px;
+            }
+
+
+            &:focus, &:hover {
+                background-color: #E6F5FF;
+                color: #5B86A5;
+                height: fit-content;
+                &:first-child {
+                    border-radius: 20px 20px 0 0;
+                }
+                &:last-child {
+                    border-radius: 0 0 20px 20px;
+                }
+            }
+
+            .project__card__list {
+                padding: 0;
+                .project__card__list-item {
+                    min-height: unset;
+                    display: flex;
+                    gap: 10px;
+                    .project__card__list-item__picture {
+                        width: 50%;
+                        height: 100%;
+                    }
+                }
+            }
+            
+        }
+    }
+
 }
 @media (max-width: 481px) {
     .hero {

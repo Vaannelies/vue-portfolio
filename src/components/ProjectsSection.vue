@@ -1,5 +1,5 @@
 <template>
-  <section-component :title="'tools'">
+  <section-component :title="'projects'">
     <div class="projects__container">
       <div tabindex="0" class="project__card">
         <div class="project__card-content__wrapper">
@@ -9,7 +9,9 @@
         <div class="project__card__list">
           <div class="project__card__list-item">
             <img class="project__card__list-item__picture" src="../assets//img/IMG_20230807_142920_Bokeh.png" />
-            SlimLaden (Android app)
+            <p class="text-xs">
+              SlimLaden (Android app)
+            </p>
           </div>
           <div class="project__card__list-item">
             <img class="project__card__list-item__picture" src="../assets//img/IMG_20230807_142920_Bokeh.png" />
