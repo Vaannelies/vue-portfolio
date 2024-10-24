@@ -17,7 +17,11 @@ window.addEventListener("DOMContentLoaded", () => {
     }, 1000);
 
     setTimeout(() => {
-      loopEl(creativeTextEl, 20);
+      if(window.innerWidth > 481) {
+        loopEl(creativeTextEl, 20);
+      } else {
+        loopEl(creativeTextEl, 5);
+      }
     }, 1700);
   }
 
