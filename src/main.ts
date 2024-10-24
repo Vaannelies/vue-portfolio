@@ -20,7 +20,7 @@ window.addEventListener("DOMContentLoaded", () => {
       if(window.innerWidth > 481) {
         loopEl(creativeTextEl, 20);
       } else {
-        loopEl(creativeTextEl, 5);
+        loopEl(creativeTextEl, 15);
       }
     }, 1700);
   }
