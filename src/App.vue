@@ -6,6 +6,7 @@
     <HobbiesSection/>
     <ToolsSection/>
     <ProjectsSection/>
+    <MediaTechSection/>
   </div>
   <FooterComponent/>
 </template>
@@ -18,6 +19,8 @@ import StatusSection from "./components/StatusSection.vue";
 import HobbiesSection from "./components/HobbiesSection.vue";
 import ToolsSection from "./components/ToolsSection.vue";
 import ProjectsSection from "./components/ProjectsSection.vue";
+import MediaTechSection from "./components/MediaTechSection.vue";
+
 
 @Options({
   components: {
@@ -27,6 +30,7 @@ import ProjectsSection from "./components/ProjectsSection.vue";
     HobbiesSection,
     ToolsSection,
     ProjectsSection,
+    MediaTechSection,
   },
 })
 export default class App extends Vue {}
