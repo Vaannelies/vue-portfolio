@@ -83,13 +83,14 @@
         <grid-card 
           title="Kotlin App" 
           description="(Elective project)" 
-          text="hwoeijelsifjeslfjels" 
           backgroundImage="/media-tech/Schermafbeelding 2024-12-27 162150.png" 
           heroImage="/media-tech/kotlin-home.png"
           :media="[
             {type: 'image', path: '/media-tech/Schermafbeelding 2024-12-27 162150.png'},
           ]"
-        />
+        >
+        As an elective project, I learned how to create an Android app in Kotlin.
+        </grid-card>
       </div>
       
       <div class="grid__row">
