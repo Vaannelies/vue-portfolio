@@ -3,7 +3,6 @@
     <div class="media-tech__projects__container">
 
       <div class="grid__row">
-        <!-- <grid-card :title="'AI in Society'" description="hallo" text="hwoeijelsifjeslfjels" :heroImage="getImagePath('../assets/img/logo-vue.svg')"/> -->
         <grid-card title="AI in Society" description="Sneakpeek AI (concept)" text="We designed an app to inform Radiology students about how AI might affect the tasks in their future career." backgroundImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png" heroImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png"/>
         <grid-card 
           title="Artificial Creatures" 
@@ -172,8 +171,8 @@
       
       
       <div class="grid__row">
-        <grid-card title="Strategies in Creative and Performing Arts" description="hallo" text="hwoeijelsifjeslfjels" backgroundImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png" heroImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png"/>
-        <grid-card title="Graduation Project" description="hallo" text="hwoeijelsifjeslfjels" backgroundImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png" heroImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png"/>
+        <grid-card title="Strategies in Creative and Performing Arts" :reversed="true" description="hallo" text="hwoeijelsifjeslfjels" backgroundImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png" heroImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png"/>
+        <grid-card title="Graduation Project" :reversed="true" description="hallo" text="hwoeijelsifjeslfjels" backgroundImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png" heroImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png"/>
       </div>
     </div>
   </section-component>

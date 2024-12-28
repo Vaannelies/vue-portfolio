@@ -596,6 +596,14 @@ body {
         transition: background-color 0.07s linear, border-radius 0.8s ease-out 0.28s;
         cursor: pointer;
 
+        &.reversed {
+            display: flex;
+            flex-direction: column-reverse;
+            .grid__card__list {
+                bottom: 100%;
+            }
+        }
+
         .grid__card-content__wrapper {
             height: 220px;
             align-content: center;
@@ -670,6 +678,31 @@ body {
             align-items: center;
             video, img {
                 height: 80%;
+                max-width: 80%;
+            }
+            .pop-up__arrows {
+                display: flex;
+                width: 160px;
+                justify-content: space-between;
+                position: absolute;
+                bottom: 0;
+                
+                .pop-up__arrow {
+                    font-size: 70px;
+                    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    color: white;
+                    visibility: hidden;
+                    background: none;
+                    border: none;
+
+                    &.visible {
+                        visibility: visible;
+                    }
+               
+                    &:hover {
+                        color: rgb(207, 207, 207);
+                    }
+                }
             }
         }
 
