@@ -20,7 +20,6 @@
         <grid-card 
           title="Creative Programming" 
           description="Courses in programming, i.e. Processing" 
-          text="hwoeijelsifjeslfjels" 
           backgroundImage="/vue-portfolio/media-tech/image_2024-12-27_19-19-46.png" 
           heroImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png"
           heroVideo="/vue-portfolio/media-tech/video_2024-12-27_21-28-33.mp4"
@@ -29,7 +28,9 @@
             {type: 'video', path: '/vue-portfolio/media-tech/etch_a_sketch.mp4'},
             {type: 'video', path: '/vue-portfolio/media-tech/alpaca.mp4'},
             ]"
-          />
+          >
+          In this course, I learned a lot about programming dynamic visuals in Processing. I also learned to connect Arduino to Processing and PlugData.
+        </grid-card>
       </div>
 
       <div class="grid__row">
@@ -89,7 +90,7 @@
             {type: 'image', path: '/vue-portfolio/media-tech/Schermafbeelding 2024-12-27 162150.png'},
           ]"
         >
-        As an elective project, I learned how to create an Android app in Kotlin.
+        As an elective project, I learned how to create an Android app in Kotlin. I created an app for tourists in Leiden. It's connected to an API and a database. It also uses geofences. 
         </grid-card>
       </div>
       
@@ -178,7 +179,7 @@
           heroImage="/vue-portfolio/media-tech/image_2024-12-28_19-55-44.png"
           >
           A teammate and I created a plan for a hypothetical installation in the stellarium in Leiden.
-          <a href="/vue-portfolio/media-tech/Sciences_and_Humanities_Final_Assignment.docx.pdf">View</a>
+          <a target="_blank" href="/vue-portfolio/media-tech/Sciences_and_Humanities_Final_Assignment.docx.pdf">View</a>
         </grid-card>
         <grid-card 
           title="Sound, Space and Interaction" 
@@ -200,13 +201,11 @@
         <grid-card 
           title="Strategies in Creative and Performing Arts" 
           description="" 
-          backgroundImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png" 
-          heroImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png"
-          :media="[
-            {type: '', path:''}
-          ]">
+          backgroundImage="/vue-portfolio/media-tech/image_2024-12-28_22-33-38.png" 
+          heroImage="/vue-portfolio/media-tech/image_2024-12-28_22-33-38.png"
+        >
           For this course, I came up with my own art strategy: invisible effort. <a href="/vue-portfolio/media-tech/Final assignment.pdf" target="_blank">View</a>
-          </grid-card>
+        </grid-card>
       </div>
       
       <div class="grid__row">

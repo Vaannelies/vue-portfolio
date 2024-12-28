@@ -4,7 +4,7 @@
             <h2 class="grid__card-title text-l text-l">{{ title }}</h2>
             <p class="grid__card-subtitle text-xs">{{ description }}</p>
         </div>
-        <div class="grid__card__list" @click="preventClose($event)">
+        <div class="grid__card__list">
           <div class="grid__card__list-item">
               <video v-if="heroVideo" muted autoplay loop class="grid__card__list-item__picture" :src="heroVideo" type="video/mp4" />
               <img v-else class="grid__card__list-item__picture" :src="heroImage" />
