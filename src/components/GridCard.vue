@@ -1,5 +1,5 @@
 <template>
-    <div @keydown.left="selectedIndex == null ? switchGridCard($event, false) : decreaseSelection()" @keydown.right="selectedIndex == null ? switchGridCard($event, true) : increaseSelection()" tabindex="0" class="grid__card" @keyup.esc="toggleGridCard($event, false)" @focusin="toggleGridCard($event, true)" @blur="toggleGridCard($event, false)">
+    <div @keydown.left="selectedIndex == null ? switchGridCard($event, false) : decreaseSelection()" @keydown.right="selectedIndex == null ? switchGridCard($event, true) : increaseSelection()" tabindex="0" class="grid__card" @keyup.esc="toggleGridCard($event, false)" @focusin="toggleGridCard($event, true)" @blur="toggleGridCard($event, false)" :style="'background-image: url(\''+backgroundImage+'\')'">
         <div class="grid__card-content__wrapper">
             <h2 class="grid__card-title text-l text-l">{{ title }}</h2>
             <p class="grid__card-subtitle text-xs">{{ description }}</p>
