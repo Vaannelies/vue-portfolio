@@ -1,5 +1,5 @@
 <template>
-    <div @keydown.left="selectedIndex == null ? switchGridCard($event, false) : decreaseSelection()" @keydown.right="selectedIndex == null ? switchGridCard($event, true) : increaseSelection()" tabindex="0" class="grid__card" @keyup.esc="toggleGridCard($event, false)" @focusin="toggleGridCard($event, true)" @blur="toggleGridCard($event, false)" :style="'background-image: url(\''+backgroundImage+'\')'" :class="{'reversed': reversed}">
+    <div @keydown.left="selectedIndex == null ? switchGridCard($event, false) : decreaseSelection()" @keydown.right="selectedIndex == null ? switchGridCard($event, true) : increaseSelection()" tabindex="0" class="grid__card" @keyup.esc="toggleGridCard($event, false)" @focusin="toggleGridCard($event, true)" @blur="toggleGridCard($event, false)">
         <div class="grid__card-content__wrapper">
             <h2 class="grid__card-title text-l text-l">{{ title }}</h2>
             <p class="grid__card-subtitle text-xs">{{ description }}</p>
@@ -39,7 +39,7 @@ export default {
   components: {
     SectionComponent,
   },
-  props: ['title', 'description', 'text', 'heroImage', 'backgroundImage', 'heroVideo', 'media', 'reversed'],
+  props: ['title', 'description', 'text', 'heroImage', 'backgroundImage', 'heroVideo', 'media', 'disableUnfold'],
     data() {
     // console.log(props)
     return {
@@ -50,12 +50,15 @@ export default {
         backgroundImage: this.backgroundImage,
         heroVideo: this.heroVideo,
         media: this.media || null,
-        media: this.reversed,
+        disableUnfold: this.disableUnfold,
         selectedIndex: null,
     }
   },
   methods: {
     toggleGridCard(event, newState) {
+      if(this.disableUnfold) {
+        return
+      }
       let height = 0
       const gridCardEl = event.target
       const gridListEl = gridCardEl.querySelector(".grid__card__list")

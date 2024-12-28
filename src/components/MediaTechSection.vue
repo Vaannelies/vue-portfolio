@@ -97,7 +97,6 @@
       </div>
       
       <div class="grid__row">
-        <grid-card title="Meta Media" description="Communicating using peculiar media" text="sdflkjd" backgroundImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png" heroImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png"/>
         <grid-card 
           title="Modern Game AI Algorithms" 
           description="Algorithms used in gaming" 
@@ -148,10 +147,10 @@
             
           ]"
         />
+        <grid-card title="Research Fundamentals" description="hallo" text="hwoeijelsifjeslfjels" backgroundImage="/vue-portfolio/media-tech/image_2024-12-27_20-29-43.png" heroImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png"/>
       </div>
         
       <div class="grid__row">
-        <grid-card title="Research Fundamentals" description="hallo" text="hwoeijelsifjeslfjels" backgroundImage="/vue-portfolio/media-tech/image_2024-12-27_20-29-43.png" heroImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png"/>
         <grid-card 
           title="Robotics" 
           description="Learning the basics of robotics" 
@@ -167,12 +166,11 @@
         />
         <grid-card title="Sciences and Humanities" description="The opinion of what 'truth' is, according to various philosophers" text="hwoeijelsifjeslfjels" backgroundImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png" heroImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png"/>
         <grid-card title="Sound, Space and Interaction" description="Creating installations with the use of sound, using PureData" text="hwoeijelsifjeslfjels" backgroundImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png" heroImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png"/>
+        <grid-card title="Strategies in Creative and Performing Arts" description="hallo" text="hwoeijelsifjeslfjels" backgroundImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png" heroImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png"/>
       </div>
       
-      
       <div class="grid__row">
-        <grid-card title="Strategies in Creative and Performing Arts" :reversed="true" description="hallo" text="hwoeijelsifjeslfjels" backgroundImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png" heroImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png"/>
-        <grid-card title="Graduation Project" :reversed="true" description="hallo" text="hwoeijelsifjeslfjels" backgroundImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png" heroImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png"/>
+        <grid-card title="Graduation Project" description="Thesis" text="hwoeijelsifjeslfjels" backgroundImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png" heroImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png" :disableUnfold="true"/>
       </div>
     </div>
   </section-component>

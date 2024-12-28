@@ -569,10 +569,15 @@ body {
     }
     &:last-of-type {
         .grid__card:first-child {
-            border-radius: 0 0 0 15px;
-        }
-        .grid__card:last-child {
-            border-radius: 0 0 15px 0;
+            border-radius: 0 0 15px 15px;
+            cursor: initial;
+            transition: height ease-out 0.1s;
+            height: 200px;
+            &:hover, &:focus {
+                background-image: url('https://i.pinimg.com/originals/2c/7c/cf/2c7ccfba6490b77f6688ae0d429d3a3a.gif') !important;
+                height: 400px;
+                background-blend-mode: lighten;
+            }
         }
     }
     width: 100%;
@@ -595,14 +600,6 @@ body {
         box-sizing: border-box;
         transition: background-color 0.07s linear, border-radius 0.8s ease-out 0.28s;
         cursor: pointer;
-
-        &.reversed {
-            display: flex;
-            flex-direction: column-reverse;
-            .grid__card__list {
-                bottom: 100%;
-            }
-        }
 
         .grid__card-content__wrapper {
             height: 220px;
