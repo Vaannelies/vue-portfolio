@@ -6,6 +6,8 @@
     <HobbiesSection/>
     <ToolsSection/>
     <ProjectsSection/>
+  </div>
+  <div class="main main--no-blend">
     <MediaTechSection/>
   </div>
   <FooterComponent/>

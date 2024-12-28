@@ -8,23 +8,27 @@
           <div class="grid__card__list-item">
               <video v-if="heroVideo" muted autoplay loop class="grid__card__list-item__picture" :src="heroVideo" type="video/mp4" />
               <img v-else class="grid__card__list-item__picture" :src="heroImage" />
-              <div class="grid__card__text">
-                  <p v-if="text">{{ text }}</p>
-                  <slot v-else></slot>
-                  <ul class="grid__card__media-list" v-if="media !== null">
-                      <li class="grid__card__media-item" v-for="(item, index) in media" v-bind:key="index" @click="selectedIndex = index">
-                          <video v-if="item.type == 'video'" muted :src="item.path" type="video/mp4" />
-                          <img v-else  :src="item.path" />
-                      </li>
-                  </ul>
-                  <div v-if="selectedIndex !== null" class="grid__card__list-item__pop-up" @click.self="selectedIndex = null">
-                      <video v-if="media[selectedIndex].type == 'video'" muted controls autoplay loop :src="media[selectedIndex].path" type="video/mp4" />
-                      <img v-else :src="media[selectedIndex].path" />
-                      <div class="pop-up__arrows">
-                        <button class="pop-up__arrow pop-up__arrow--left" :class="{'visible':selectedIndex > 0}" @click.prevent="decreaseSelection"><</button>
-                        <button class="pop-up__arrow pop-up__arrow--right" :class="{'visible': selectedIndex < media.length - 1}" @click.prevent="increaseSelection">></button>
-                      </div>
-                  </div>
+              <div class="grid__card__list-item__content-wrapper">
+                <ul class="grid__card__media-list" v-if="media !== null">
+                    <li class="grid__card__media-item" v-for="(item, index) in media" v-bind:key="index" @click="selectedIndex = index">
+                      <video v-if="item.type == 'video'" muted :src="item.path" type="video/mp4" />
+                      <img v-else-if="item.type == 'image'" :src="item.path" />
+                      <iframe v-else @click="selectedIndex = index" width="80" height="80" :src="item.path" title="YouTube video player" frameborder="0" disabled referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </li>
+                </ul>
+                <div class="grid__card__text text-xs">
+                    <p v-if="text">{{ text }}</p>
+                    <slot v-else></slot>
+                    <div v-if="selectedIndex !== null" class="grid__card__list-item__pop-up" @click.self="selectedIndex = null">
+                        <video v-if="media[selectedIndex].type == 'video'" muted controls autoplay loop :src="media[selectedIndex].path" type="video/mp4" />
+                        <img v-else-if="media[selectedIndex].type == 'image'" :src="media[selectedIndex].path" />
+                        <iframe v-else width="560" height="315" :src="media[selectedIndex].path" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div v-if="media.length > 1" class="pop-up__arrows">
+                          <button class="pop-up__arrow pop-up__arrow--left" :class="{'enabled':selectedIndex > 0}" @click.prevent="decreaseSelection"><</button>
+                          <button class="pop-up__arrow pop-up__arrow--right" :class="{'enabled': selectedIndex < media.length - 1}" @click.prevent="increaseSelection">></button>
+                        </div>
+                    </div>
+                </div>
               </div>
           </div>
         </div>
@@ -41,7 +45,6 @@ export default {
   },
   props: ['title', 'description', 'text', 'heroImage', 'backgroundImage', 'heroVideo', 'media', 'disableUnfold'],
     data() {
-    // console.log(props)
     return {
         title: this.title,
         description: this.description,
@@ -52,6 +55,7 @@ export default {
         media: this.media || null,
         disableUnfold: this.disableUnfold,
         selectedIndex: null,
+        hasFocus: false
     }
   },
   methods: {
@@ -71,8 +75,7 @@ export default {
         } else {
           event.target.blur()
         }
-        console.log(newState)
-        if(newState || !event.relatedTarget || (event.relatedTarget && event.relatedTarget.className == "grid__card")) {
+        if(newState || !event.relatedTarget || (event.relatedTarget && event.relatedTarget.className == "grid__card") || (event.relatedTarget && !event.relatedTarget.closest(".grid__card"))) {
           gridListEl.setAttribute('style', 'height: ' + height + 'px')
         }
       }
@@ -81,15 +84,12 @@ export default {
       event.preventDefault()
     },
     increaseSelection() {
-      console.log("+")
       this.selectedIndex < this.media.length - 1 ? this.selectedIndex++ : false
     },
     decreaseSelection() {
-      console.log("-")
       this.selectedIndex > 0 ? this.selectedIndex-- : false
     },
     switchGridCard(event, next) {
-      console.log(event.target)
       if(next) {
         if(event.target.nextSibling) {
           event.target.nextSibling.focus()
