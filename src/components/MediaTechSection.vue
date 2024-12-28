@@ -123,7 +123,16 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/cvI72eArJUg?si=jvsFNhdvKrJd7oLd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
         </grid-card>
-        <grid-card title="Non-human Cognition" description="Behavior in animals and funghi" text="My team and I conducted our own research on pigeon behavior in a teammate's backyard. The observations of pigeon behavior during feeding time was described on a poster." backgroundImage="/vue-portfolio/media-tech/NHC POSTER PRINT-1.png" heroImage="/vue-portfolio/media-tech/NHC POSTER PRINT-1.png"/>
+        <grid-card 
+          title="Non-human Cognition" 
+          description="Behavior in animals and funghi" 
+          text="My team and I conducted a research experiment on pigeon behavior in a teammate's backyard. We reported the observations of pigeon behavior at feeding time on a poster." 
+          backgroundImage="/vue-portfolio/media-tech/NHC POSTER PRINT-1_thumbnail.png" 
+          heroImage="/vue-portfolio/media-tech/NHC POSTER PRINT-1.png"
+          :media="[
+            {type: 'image', path: '/vue-portfolio/media-tech/NHC POSTER PRINT-1.png'},
+          ]"
+        />
         <grid-card 
           title="Playful and Creative Science" 
           description="Visualize the output of scientific research in a creative way" 
@@ -139,12 +148,12 @@
             {type: 'image', path: '/vue-portfolio/media-tech/Afbeelding van WhatsApp op 2024-01-19 om 00.43.27_8df6dea1.jpg'},
             
           ]"
-          />
-        </div>
+        />
+      </div>
         
-        <div class="grid__row">
-          <grid-card title="Research Fundamentals" description="hallo" text="hwoeijelsifjeslfjels" backgroundImage="/vue-portfolio/media-tech/image_2024-12-27_20-29-43.png" heroImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png"/>
-          <grid-card 
+      <div class="grid__row">
+        <grid-card title="Research Fundamentals" description="hallo" text="hwoeijelsifjeslfjels" backgroundImage="/vue-portfolio/media-tech/image_2024-12-27_20-29-43.png" heroImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png"/>
+        <grid-card 
           title="Robotics" 
           description="Learning the basics of robotics" 
           text="hwoeijelsifjeslfjels" 
