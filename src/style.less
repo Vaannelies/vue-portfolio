@@ -611,7 +611,24 @@ body {
             height: 220px;
             align-content: center;
             padding: 0 20px;
+            .grid__card-hover-text {
+                opacity: 0;
+                transition: opacity 0.1s linear;
+                padding: 30px;
+                text-align: left;
+                height: 0;
+            } 
+            &:hover {
+                &:has(.grid__card-hover-text) {
+                    padding-top: 45px;
+                }
+                .grid__card-hover-text {
+                    opacity: 1;
+                    height: fit-content;
+                } 
+            }
         }
+
 
         .grid__card__list {
             height: 0;
@@ -628,6 +645,7 @@ body {
                 height: 80vh;
                 color: #5B86A5;
                 box-sizing: border-box;
+                cursor: initial;
                 .grid__card__list-item__picture {
                     width: 50%;
                     object-fit: cover;

@@ -180,14 +180,13 @@
         <grid-card 
           title="Robotics" 
           description="Learning the basics of robotics" 
-          text="hwoeijelsifjeslfjels" 
           backgroundImage="/vue-portfolio/media-tech/image_2024-12-27_21-09-57.png" 
           heroImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png" 
           heroVideo="/vue-portfolio/media-tech/robotics ‐ Gemaakt met Clipchamp.mp4"
           :media="[
             {type: 'video', path: '/vue-portfolio/media-tech/robotics ‐ Gemaakt met Clipchamp.mp4'},
             {type: 'image', path: '/vue-portfolio/media-tech/image_2024-12-27_21-09-57.png'},
-            {type: 'image', path: '/vue-portfolio/media-tech/photo_2024-12-28_23-22-14.png'},
+            {type: 'image', path: '/vue-portfolio/media-tech/photo_2024-12-28_23-22-14.jpg'},
           ]"
         >
         In a team, I created an algorithm for a robot car (equipped with a camera) that lets it pick up soda cans of a certain color.
@@ -232,12 +231,14 @@
       
       <div class="grid__row">
         <grid-card 
-        title="Graduation Project [work in progress]" 
-        description="For my thesis, I am using computational methods to discover new insights about a relatively unknown medical condition, called retrograde cricopharyngeal dysfunction (R-CPD). I have performed content analysis on 11.904 Reddit posts, from a subreddit called 'r/noburp'. This subreddit is about R-CPD has over 33.000 members." 
-        backgroundImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png" 
-        heroImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png" 
-        :disableUnfold="true"
-        />
+          title="Graduation Project" 
+          description="Thesis, work in progress." 
+          backgroundImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png" 
+          heroImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png" 
+          :disableUnfold="true"
+        >
+        For my thesis, I am using computational methods to discover new insights about a relatively unknown medical condition, called retrograde cricopharyngeal dysfunction (R-CPD). I have performed content analysis on 11.904 Reddit posts, from a subreddit called 'r/noburp'. This subreddit is about R-CPD has over 33.000 members. Using Python, I extracted all posts. I cleaned them, tokenized them, lemmatized them, embedded them and subjected them to an LDA model. I found topics, labelled the posts in a 2-dimensional t-SNE plot and visualized them. I performed sentiment analysis on the posts and checked out other features of each posts, such as post length, number of comments and creation date.
+        </grid-card>
       </div>
     </div>
   </section-component>

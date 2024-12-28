@@ -3,6 +3,9 @@
         <div class="grid__card-content__wrapper">
             <h2 class="grid__card-title text-l text-l">{{ title }}</h2>
             <p class="grid__card-subtitle text-xs">{{ description }}</p>
+            <div v-if="disableUnfold" class="grid__card-hover-text">
+              <slot></slot>
+            </div>
         </div>
         <div class="grid__card__list">
           <div class="grid__card__list-item">
