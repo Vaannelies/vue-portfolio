@@ -87,6 +87,7 @@ function setToolsContainerEventListener() {
     { name: "PlugData", image: new URL("./assets/img/logo-pd.svg", import.meta.url).href  },
     { name: "Kotlin", image: new URL("./assets/img/logo-kotlin.svg", import.meta.url).href  },
     { name: "Laravel", image: new URL("./assets/img/logo-laravel.svg", import.meta.url).href  },
+    { name: "Raspberry Pi", image: new URL("./assets/img/logo-raspberry-pi.png", import.meta.url).href  },
   ];
 
   let toolsContainerExpanded = false;

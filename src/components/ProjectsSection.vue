@@ -4,7 +4,7 @@
       <div tabindex="0" class="project__card" @focus="toggleProjectCard($event, true)" @blur="toggleProjectCard($event, false)">
         <div class="project__card-content__wrapper">
           <h2 class="project__card-title text-l text-l">front-end</h2>
-          <p class="project__card-subtitle text-xs">Mostly VueJS, vanilla JS, TypeScript, Smarty</p>
+          <p class="project__card-subtitle text-xs">Websites, web apps, native apps (Android)</p>
         </div>
         <div class="project__card__list">
           <div class="project__card__list-item">
@@ -24,7 +24,7 @@
       <div tabindex="0" class="project__card" @focus="toggleProjectCard($event, true)" @blur="toggleProjectCard($event, false)">
         <div class="project__card-content__wrapper">
           <h2 class="project__card-title text-l">back-end</h2>
-          <p class="project__card-subtitle text-xs">NodeJS, PHP</p>
+          <p class="project__card-subtitle text-xs">(REST) APIs, database queries (CRUD), creating endpoints, data validation, securtiy</p>
         </div>
         <div class="project__card__list">
           <div class="project__card__list-item">
@@ -41,7 +41,7 @@
       <div tabindex="0" class="project__card" @focus="toggleProjectCard($event, true)" @blur="toggleProjectCard($event, false)">
         <div class="project__card-content__wrapper">
           <h2 class="project__card-title text-l">UX</h2>
-          <p class="project__card-subtitle text-xs">...</p>
+          <p class="project__card-subtitle text-xs">Accessibility, interviews, journey maps, personas, user flows, usability testing, info architecture, paper prototypes, empathy maps, user stories, wireframes</p>
         </div>
         <div class="project__card__list">
           <div class="project__card__list-item">
@@ -52,7 +52,7 @@
       <div tabindex="0" class="project__card" @focus="toggleProjectCard($event, true)" @blur="toggleProjectCard($event, false)">
         <div class="project__card-content__wrapper">
           <h2 class="project__card-title text-l">hardware</h2>
-          <p class="project__card-subtitle text-xs">Arduino, Raspberry Pi, IoT, soldering, smart objects, robots</p>
+          <p class="project__card-subtitle text-xs">Rapid prototyping, soldering, robotsArduino, Raspberry Pi, IoT, soldering, smart objects, robots</p>
         </div>
         <div class="project__card__list">
           <div class="project__card__list-item">

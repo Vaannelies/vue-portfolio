@@ -362,6 +362,7 @@ body {
     flex-direction: column;
     overflow: hidden;
     transition: 0.1s linear;
+    user-select: none;
 
     .hobby__card-title {
         margin: 22px;
@@ -495,6 +496,9 @@ body {
     display: flex;
     gap: 1px;
     .project__card {
+        /*TO DO: REMOVE "pointer-events: none" BECAUSE THAT WAS ONLY
+        FOR TEMPORARILY DISABLING THE PROJECTS CARDS!! REMOVE THIS LINE OF CODE LATER! */
+        pointer-events: none;
         width: 100%;
         height: fit-content;
         background-color: #5B86A5;

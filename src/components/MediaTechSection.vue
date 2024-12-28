@@ -37,7 +37,6 @@
         <grid-card 
           title="Exhibition: Science to Experience" 
           description="Hosting an exhibition in Rotterdam" 
-          text="hwoeijelsifjeslfjels" 
           backgroundImage="/vue-portfolio/media-tech/image_2023-06-03_16-10-18.png" 
           heroImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png" 
           heroVideo="/vue-portfolio/media-tech/signal-2023-06-06-14-29-44-625.mp4"
@@ -45,12 +44,22 @@
             {type: 'video', path: '/vue-portfolio/media-tech/signal-2023-06-06-14-29-44-625.mp4'},
             {type: 'image', path: '/vue-portfolio/media-tech/image_2023-06-03_16-10-18.png'},
             {type: 'video', path: '/vue-portfolio/media-tech/VID_20230609_140904.mp4'},
+            {type: 'image', path: '/vue-portfolio/media-tech/Screenshot 2024-12-28 at 23-06-22 Instagram.png'},
+            {type: 'image', path: '/vue-portfolio/media-tech/image_2024-12-28_23-09-33.png'},
+            {type: 'image', path: '/vue-portfolio/media-tech/image_2024-12-28_23-06-38.png'},
             ]"
-          />
+        >
+          June 2023, my classmates and I hosted an exhibition in Rotterdam. In teams, we created all of the installations. The theme was "patterns". My team created an interactive installation where visitors were asked to solve an old unsolved "crime". They had to connect the right pictures on the wall using red yarn.
+          Technically, there was no correct answer. However, every participant came up with a totally different story. Most of the participants appeared very certain of their case.
+          After they "submitted their answer", we showed them a compilation of the answers of the previous participants. The goal of our installation was to show people that everyone might see different patterns in things, even if they are looking at the same info as you are.
+          This phenomenon is called "apophenia": seeing patterns that are not really there.
+          <br>
+          <br>
+          We used a projector to project the red lines of the previous participants on the wall.
+        </grid-card>
         <grid-card 
           title="Hardware and Physical Computing" 
           description="Soldering and working with sensors and actors on an Arduino" 
-          text="hwoeijelsifjeslfjels" 
           backgroundImage="/vue-portfolio/media-tech/image_2024-12-27_19-02-02.png" 
           heroVideo="/vue-portfolio/media-tech/Video van WhatsApp op 2024-01-16 om 13.05.53_92de3586.mp4"
           :media="[
@@ -58,12 +67,13 @@
             {type: 'image', path: '/vue-portfolio/media-tech/image_2024-12-27_18-49-49.png'},
             {type: 'image', path: '/vue-portfolio/media-tech/image_2024-12-27_19-02-02.png'}
           ]">
-          hoi
+          In a team, I created a small escape room. We created a vault that was locked with a lever connected to a servo. The vault would automatically open if the player entered the right password in the device we created. 
+          In order to reach the vault, the player had to cross an obstacle that consisted of red wires with tiny bells on it. If you touched a wire, the bells would trigger a sound sensor.
+          The player had to guess the password based on a rebus we made.
         </grid-card>
         <grid-card 
           title="Human Computer Interaction and Information Visualization" 
           description="UX" 
-          text="hwoeijelsifjeslfjels" 
           backgroundImage="/vue-portfolio/media-tech/image_2024-12-27_21-15-00.png" 
           heroImage="/vue-portfolio/media-tech/Schermafbeelding 2024-12-27 170010.png"
           :media="[
@@ -80,7 +90,14 @@
             {type: 'image', path: '/vue-portfolio/media-tech/storyboard2.png'},
             {type: 'image', path: '/vue-portfolio/media-tech/birds_diagram.png'},
           ]"
-          />
+        >
+        My teammate and I came up with an app for people suffering from ornitophobia (fear of birds). 
+        I designed and created an Android app that tells you how many birds have been spotted in specific areas in the Netherlands.
+        People can use this app to avoid birds. If they are afraid to go to a certain place because there might be birds, theoretically they could use this app to check the presence of birds before they leave their house.
+        The lack of bird registrations in the API is a great limitation of the app.
+        <br><br>
+        Later, we decided to add features for people who want to use this app to find and attract <b>more</b> birds.
+        </grid-card>
         <grid-card 
           title="Kotlin App" 
           description="(Elective project)" 
@@ -88,6 +105,7 @@
           heroImage="/vue-portfolio/media-tech/kotlin-home.png"
           :media="[
             {type: 'image', path: '/vue-portfolio/media-tech/Schermafbeelding 2024-12-27 162150.png'},
+            {type: 'image', path: '/vue-portfolio/media-tech/image_2024-12-28_23-14-04.png'},
           ]"
         >
         As an elective project, I learned how to create an Android app in Kotlin. I created an app for tourists in Leiden. It's connected to an API and a database. It also uses geofences. 
@@ -121,7 +139,7 @@
         </grid-card>
         <grid-card 
           title="Non-human Cognition" 
-          description="Behavior in animals and funghi" 
+          description="Animal behavior experiment" 
           text="In a team, I conducted a research experiment on pigeon behavior in a teammate's backyard. We reported the observations of pigeon behavior at feeding time on a poster." 
           backgroundImage="/vue-portfolio/media-tech/NHC POSTER PRINT-1_thumbnail.png" 
           heroImage="/vue-portfolio/media-tech/NHC POSTER PRINT-1.png"
@@ -149,11 +167,11 @@
         </grid-card>
         <grid-card 
         title="Research Fundamentals" 
-        description="hallo" 
+        description="Scientific research" 
         backgroundImage="/vue-portfolio/media-tech/image_2024-12-27_20-29-43.png" 
         heroImage="/vue-portfolio/media-tech/image_2024-12-27_20-29-43.png"
         >
-        I wrote a <a href="/vue-portfolio/media-tech/7-papers-assignment_annelies_vaandrager_s3624587.pdf" target="_blank">literature review</a> about papers about Retrograde Crycopharyngeal Dysfunction (R-CPD).
+        I wrote a <a href="/vue-portfolio/media-tech/7-papers-assignment_annelies_vaandrager_s3624587.pdf" target="_blank">literature review</a> about papers about retrograde cricopharyngeal dysfunction (R-CPD).
      
         </grid-card>
       </div>
@@ -169,9 +187,13 @@
           :media="[
             {type: 'video', path: '/vue-portfolio/media-tech/robotics ‐ Gemaakt met Clipchamp.mp4'},
             {type: 'image', path: '/vue-portfolio/media-tech/image_2024-12-27_21-09-57.png'},
-            
+            {type: 'image', path: '/vue-portfolio/media-tech/photo_2024-12-28_23-22-14.png'},
           ]"
-        />
+        >
+        In a team, I created an algorithm for a robot car (equipped with a camera) that lets it pick up soda cans of a certain color.
+        The robot is voice activated and it takes a natural language prompt as input. You can tell it the brand of the soda can you want it to pick up, and it will understand which color it has to look for.
+        For this course, I also wrote an algorithm for a simulated vacuum cleaner that had to navigate through different rooms using a LIDAR.
+      </grid-card>
         <grid-card
           title="Sciences and Humanities" 
           description="The opinion of what 'truth' is, according to various philosophers" 
@@ -204,15 +226,18 @@
           backgroundImage="/vue-portfolio/media-tech/image_2024-12-28_22-33-38.png" 
           heroImage="/vue-portfolio/media-tech/image_2024-12-28_22-33-38.png"
         >
-          For this course, I came up with my own art strategy: invisible effort. <a href="/vue-portfolio/media-tech/Final assignment.pdf" target="_blank">View</a>
+          For this course, I invented a new art strategy: invisible effort. <a href="/vue-portfolio/media-tech/Final assignment.pdf" target="_blank">View</a>
         </grid-card>
       </div>
       
       <div class="grid__row">
-        <grid-card title="Graduation Project" description="Thesis, work in progress." backgroundImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png" heroImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png" :disableUnfold="true">
-          For my thesis, I am using computational methods to discover new insights about a relatively unknown medical condition, called retrograde cricopharyngeal dysfunction (R-CPD). 
-          I have performed content analysis on 11.904 Reddit posts, from a subreddit called "r/noburp". This subreddit is about R-CPD has over 33.000 members.
-        </grid-card>
+        <grid-card 
+        title="Graduation Project [work in progress]" 
+        description="For my thesis, I am using computational methods to discover new insights about a relatively unknown medical condition, called retrograde cricopharyngeal dysfunction (R-CPD). I have performed content analysis on 11.904 Reddit posts, from a subreddit called 'r/noburp'. This subreddit is about R-CPD has over 33.000 members." 
+        backgroundImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png" 
+        heroImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png" 
+        :disableUnfold="true"
+        />
       </div>
     </div>
   </section-component>
