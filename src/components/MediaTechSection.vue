@@ -77,7 +77,6 @@
           backgroundImage="/vue-portfolio/media-tech/image_2024-12-27_21-15-00.png" 
           heroImage="/vue-portfolio/media-tech/Schermafbeelding 2024-12-27 170010.png"
           :media="[
-            {type: 'image', path: '/vue-portfolio/media-tech/Schermafbeelding 2024-12-27 162150.png'},
             {type: 'image', path: '/vue-portfolio/media-tech/image_2024-12-27_21-15-48.png'},
             {type: 'image', path: '/vue-portfolio/media-tech/birds_normal_list.png'},
             {type: 'image', path: '/vue-portfolio/media-tech/birds_filter.png'},
