@@ -200,7 +200,7 @@
           heroImage="/vue-portfolio/media-tech/image_2024-12-28_19-55-44.png"
           >
           A teammate and I created a plan for a hypothetical installation in the stellarium in Leiden.
-          <a target="_blank" href="/vue-portfolio/media-tech/Sciences_and_Humanities_Final_Assignment.docx.pdf">View</a>
+          <a target="_blank" href="/vue-portfolio/media-tech/Science_and_Humanities_Final_Assignment.docx.pdf">View</a>
         </grid-card>
         <grid-card 
           title="Sound, Space and Interaction" 
