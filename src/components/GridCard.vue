@@ -1,13 +1,13 @@
 <template>
     <!-- <div tabindex="0" class="grid__card" @focus="toggleGridCard($event, true)" @blur="toggleGridCard($event, false)" :style="'background-image: url(\''+backgroundImage+'\')'"> -->
-    <div tabindex="0" class="grid__card" @focusin="toggleGridCard($event, true)" @focusout="toggleGridCard($event, false)" :style="'background-image: url(\''+backgroundImage+'\')'">
+    <div tabindex="0" class="grid__card" @keyup.esc="toggleGridCard($event, false)" @focusin="toggleGridCard($event, true)" @blur="toggleGridCard($event, false)" :style="'background-image: url(\''+backgroundImage+'\')'">
         <div class="grid__card-content__wrapper">
             <h2 class="grid__card-title text-l text-l">{{ title }}</h2>
             <p class="grid__card-subtitle text-xs">{{ description }}</p>
         </div>
-        <div class="grid__card__list">
+        <div class="grid__card__list" @click="preventClose($event)">
             <div class="grid__card__list-item">
-                <video v-if="heroVideo" @click.prevent="$event.preventDefault(); $event.stopPropagation(); console.log('hoi')" muted autoplay loop class="grid__card__list-item__picture" :src="heroVideo" type="video/mp4" />
+                <video v-if="heroVideo" muted autoplay loop class="grid__card__list-item__picture" :src="heroVideo" type="video/mp4" />
                 <img v-else class="grid__card__list-item__picture" :src="heroImage" />
                 <div class="grid__card__text">
                     <p v-if="text">{{ text }}</p>
@@ -56,14 +56,22 @@ export default {
       const gridCardEl = event.target
       const gridListEl = gridCardEl.querySelector(".grid__card__list")
       if(gridListEl) {
-          if(newState) {
-            const gridListItems = gridListEl.querySelectorAll(".grid__card__list-item")
-            gridListItems.forEach(el => {
-              height += parseInt(getComputedStyle(el).height)
-            });
-          }
+        if(newState) {
+          const gridListItems = gridListEl.querySelectorAll(".grid__card__list-item")
+          gridListItems.forEach(el => {
+            height += parseInt(getComputedStyle(el).height)
+          });
+        } else {
+          event.target.blur()
+        }
+
+        if(newState || !event.relatedTarget || (event.relatedTarget && event.relatedTarget.className == "grid__card")) {
           gridListEl.setAttribute('style', 'height: ' + height + 'px')
+        }
       }
+    },
+    preventClose(event) {
+      event.preventDefault()
     }
   }
 }
