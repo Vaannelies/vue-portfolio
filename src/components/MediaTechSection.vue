@@ -55,11 +55,12 @@
             {type: 'image', path: '/vue-portfolio/media-tech/Screenshot 2024-12-28 at 23-06-22 Instagram.png'},
             {type: 'image', path: '/vue-portfolio/media-tech/image_2024-12-28_23-09-33.png'},
             {type: 'image', path: '/vue-portfolio/media-tech/image_2024-12-28_23-06-38.png'},
+            {type: 'image', path: '/vue-portfolio/media-tech/Afbeelding van WhatsApp op 2024-12-29 om 12.17.10_73080bbf.jpg'},
             ]"
         >
           June 2023, my classmates and I hosted an exhibition in Rotterdam. In teams, we created all of the installations. The theme was "patterns". My team created an interactive installation where visitors were asked to solve an old unsolved "crime". They had to connect the right pictures on the wall using red yarn.
           Technically, there was no correct answer. However, every participant came up with a totally different story. Most of the participants appeared very certain of their case.
-          After they "submitted their answer", we showed them a compilation of the answers of the previous participants. The goal of our installation was to show people that everyone might see different patterns in things, even if they are looking at the same info as you are.
+          After they "submitted their answer", we showed them a compilation of the answers of the previous participants. A thicker red line in the results of the previous participants means that more people submitted the same connection between the same pictures. The goal of our installation was to show people that everyone might see different patterns in things, even if they are looking at the same info as you are.
           This phenomenon is called "apophenia": seeing patterns that are not really there.
           <br>
           <br>
