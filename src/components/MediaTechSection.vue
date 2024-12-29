@@ -283,9 +283,10 @@ export default {
       const gridCardEl = this.lastFocusedElement
       const gridListEl = gridCardEl.querySelector(".grid__card__list")
 
-      if(isOverlay || event.explicitOriginalTarget?.className == "grid__card__overlay") {
+      if(isOverlay || event.explicitOriginalTarget?.className == "grid__card__overlay" || event.target.tagName == "A") {
         gridListEl.setAttribute('style', 'height: ' + height + 'px')
         gridCardEl.blur()
+        document.activeElement.blur()
         return
       }
       if(gridListEl) {
@@ -295,7 +296,7 @@ export default {
             height += parseInt(getComputedStyle(el).height)
           });
         }
-        if(newState || (event.relatedTarget && event.relatedTarget.className == "grid__card") || (event.relatedTarget && !event.relatedTarget.closest(".grid__card"))) {
+        if(newState || !event.relatedTarget || (event.relatedTarget && event.relatedTarget.className == "grid__card") || (event.relatedTarget && !event.relatedTarget.closest(".grid__card"))) {
           gridListEl.setAttribute('style', 'height: ' + height + 'px')
         }
       }
