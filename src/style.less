@@ -563,6 +563,15 @@ body {
     
 }
 
+    
+.grid__card__overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
 .grid__row {
     position: relative;
     &:first-of-type {
@@ -596,6 +605,9 @@ body {
             margin-top: 80vh;
         }
     }
+
+ 
+
 
     .grid__card {
         width: 100%;
@@ -1013,7 +1025,7 @@ footer {
         }
         .grid__card__list-item__content-wrapper {
             width: 100%;
-            height: 70%;
+            height: 100%;
         }
     }
 
@@ -1155,6 +1167,15 @@ footer {
     }
     .grid__row .grid__card .grid__card__text {
         padding: 20px 28px;
+    }
+
+    .grid__row:last-of-type .grid__card:first-child {
+        &:hover, &:focus {
+            height: 50vh;
+            min-height: fit-content;
+            padding-bottom: 100px;
+            box-sizing: content-box;
+        }
     }
 
 }

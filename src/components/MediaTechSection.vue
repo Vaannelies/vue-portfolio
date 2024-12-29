@@ -1,10 +1,18 @@
 <template>
   <section-component :title="'media technology'">
     <div class="media-tech__projects__container">
-
+      <span v-if="hasFocusedElement" @click="toggleGridCard({newState: 'sldf', isOverlay: true, element: lastFocusedElement})" class="grid__card__overlay"></span>
       <div class="grid__row">
-        <grid-card title="AI in Society" description="Sneakpeek AI (concept)" text="We designed an app to inform Radiology students about how AI might affect the tasks in their future career." backgroundImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png" heroImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png"/>
-        <grid-card 
+        <grid-card @toggleGridCard="toggleGridCard($event)" 
+          title="AI in Society" 
+          description="Sneakpeek AI (concept)" text="We designed an app to inform Radiology students about how AI might affect the tasks in their future career." 
+          backgroundImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png" 
+          heroImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png"
+          :media="[
+            {type: 'image', path: '/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png'}
+          ]"
+        />
+        <grid-card @toggleGridCard="toggleGridCard($event)" 
           title="Artificial Creatures" 
           description="Unique aspects of organic creatures, portrayed by artificial ones" 
           text="We created a robot that loves to check himself out in the mirror. When the infraredsensor registers input, the LED-matrix shows heart-eyes and the head tilts and rotates a little bit, as if it is checking out its own face in the mirror. If the mirror is taken away, the robot stops moving and shows a sad face. This behavior, vanity, appears to be a feature that only humans show. Robots usually do not show this behavior." 
@@ -17,7 +25,7 @@
             {type: 'image', path: '/vue-portfolio/media-tech/Afbeelding van WhatsApp op 2023-03-24 om 13.27.38_d6efa77b.jpg'},
             ]"
         />
-        <grid-card 
+        <grid-card @toggleGridCard="toggleGridCard($event)" 
           title="Creative Programming" 
           description="Courses in programming, i.e. Processing" 
           backgroundImage="/vue-portfolio/media-tech/image_2024-12-27_19-19-46.png" 
@@ -34,7 +42,7 @@
       </div>
 
       <div class="grid__row">
-        <grid-card 
+        <grid-card @toggleGridCard="toggleGridCard($event)" 
           title="Exhibition: Science to Experience" 
           description="Hosting an exhibition in Rotterdam" 
           backgroundImage="/vue-portfolio/media-tech/image_2023-06-03_16-10-18.png" 
@@ -57,7 +65,7 @@
           <br>
           We used a projector to project the red lines of the previous participants on the wall.
         </grid-card>
-        <grid-card 
+        <grid-card @toggleGridCard="toggleGridCard($event)" 
           title="Hardware and Physical Computing" 
           description="Soldering and working with sensors and actors on an Arduino" 
           backgroundImage="/vue-portfolio/media-tech/image_2024-12-27_19-02-02.png" 
@@ -71,7 +79,7 @@
           In order to reach the vault, the player had to cross an obstacle that consisted of red wires with tiny bells on it. If you touched a wire, the bells would trigger a sound sensor.
           The player had to guess the password based on a rebus we made.
         </grid-card>
-        <grid-card 
+        <grid-card @toggleGridCard="toggleGridCard($event)" 
           title="Human Computer Interaction and Information Visualization" 
           description="UX" 
           backgroundImage="/vue-portfolio/media-tech/image_2024-12-27_21-15-00.png" 
@@ -97,7 +105,7 @@
         <br><br>
         Later, we decided to add features for people who want to use this app to find and attract <b>more</b> birds.
         </grid-card>
-        <grid-card 
+        <grid-card @toggleGridCard="toggleGridCard($event)" 
           title="Kotlin App" 
           description="(Elective project)" 
           backgroundImage="/vue-portfolio/media-tech/Schermafbeelding 2024-12-27 162150.png" 
@@ -107,12 +115,12 @@
             {type: 'image', path: '/vue-portfolio/media-tech/image_2024-12-28_23-14-04.png'},
           ]"
         >
-        As an elective project, I learned how to create an Android app in Kotlin. I created an app for tourists in Leiden. It's connected to an API and a database. It also uses geofences. 
+        As an elective project, I learned how to create an Android app in Kotlin. I created an app for tourists in Leiden. It's connected to an API and a database. It also uses geofencing. 
         </grid-card>
       </div>
       
       <div class="grid__row">
-        <grid-card 
+        <grid-card @toggleGridCard="toggleGridCard($event)" 
           title="Modern Game AI Algorithms" 
           description="Algorithms used in gaming" 
           backgroundImage="/vue-portfolio/media-tech/image_2024-12-27_20-41-15.png" 
@@ -136,7 +144,7 @@
             </p>
           </div>
         </grid-card>
-        <grid-card 
+        <grid-card @toggleGridCard="toggleGridCard($event)" 
           title="Non-human Cognition" 
           description="Animal behavior experiment" 
           text="In a team, I conducted a research experiment on pigeon behavior in a teammate's backyard. We reported the observations of pigeon behavior at feeding time on a poster." 
@@ -146,7 +154,7 @@
             {type: 'image', path: '/vue-portfolio/media-tech/NHC POSTER PRINT-1.png'},
           ]"
         />
-        <grid-card 
+        <grid-card @toggleGridCard="toggleGridCard($event)" 
           title="Playful and Creative Science" 
           description="Visualize the output of scientific research in a creative way" 
           backgroundImage="/vue-portfolio/media-tech/image_2024-12-27_18-44-44.png" 
@@ -164,7 +172,7 @@
           With a teammate, I crafted an interactive peephole box. A scientic paper reported that bees stop humming during a solar eclipse.
           We wanted to visualize this phenomenon in a creative way. Using a light sensor, a servo motor and a buzzer, we triggered an Arduino to cover the light-hole of the box with a cardboard "moon" whenever a person covered the top of the box using the "solar eclipse activator lid".
         </grid-card>
-        <grid-card 
+        <grid-card @toggleGridCard="toggleGridCard($event)" 
         title="Research Fundamentals" 
         description="Scientific research" 
         backgroundImage="/vue-portfolio/media-tech/image_2024-12-27_20-29-43.png" 
@@ -176,7 +184,7 @@
       </div>
         
       <div class="grid__row">
-        <grid-card 
+        <grid-card @toggleGridCard="toggleGridCard($event)" 
           title="Robotics" 
           description="Learning the basics of robotics" 
           backgroundImage="/vue-portfolio/media-tech/image_2024-12-27_21-09-57.png" 
@@ -188,20 +196,22 @@
             {type: 'image', path: '/vue-portfolio/media-tech/photo_2024-12-28_23-22-14.jpg'},
           ]"
         >
-        In a team, I created an algorithm for a robot car (equipped with a camera) that lets it pick up soda cans of a certain color.
-        The robot is voice activated and it takes a natural language prompt as input. You can tell it the brand of the soda can you want it to pick up, and it will understand which color it has to look for.
-        For this course, I also wrote an algorithm for a simulated vacuum cleaner that had to navigate through different rooms using a LIDAR.
-      </grid-card>
+          In a team, I created an algorithm for a robot car (equipped with a camera) that lets it pick up soda cans of a certain color.
+          The robot is voice activated and it takes a natural language prompt as input. You can tell it the brand of the soda can you want it to pick up, and it will understand which color it has to look for.
+          For this course, I also wrote an algorithm for a simulated vacuum cleaner that had to navigate through different rooms using a LIDAR.
+        </grid-card>
         <grid-card
+          @toggleGridCard="toggleGridCard($event)"
           title="Sciences and Humanities" 
-          description="The opinion of what 'truth' is, according to various philosophers" 
+          description="Philosophers' views on truth" 
           backgroundImage="/vue-portfolio/media-tech/image_2024-12-28_19-55-44.png" 
           heroImage="/vue-portfolio/media-tech/image_2024-12-28_19-55-44.png"
           >
-          A teammate and I created a plan for a hypothetical installation in the stellarium in Leiden.
+          A teammate and I created a plan for a hypothetical exhibition at the Observatory of
+          Leiden University.
           <a target="_blank" href="/vue-portfolio/media-tech/Science_and_Humanities_Final_Assignment.docx.pdf">View</a>
         </grid-card>
-        <grid-card 
+        <grid-card @toggleGridCard="toggleGridCard($event)" 
           title="Sound, Space and Interaction" 
           description="Creating installations with the use of sound, using PureData" 
           backgroundImage="/vue-portfolio/media-tech/image_2024-12-28_18-24-55.png" 
@@ -218,7 +228,7 @@
 
 
         </grid-card>
-        <grid-card 
+        <grid-card @toggleGridCard="toggleGridCard($event)" 
           title="Strategies in Creative and Performing Arts" 
           description="" 
           backgroundImage="/vue-portfolio/media-tech/image_2024-12-28_22-33-38.png" 
@@ -229,7 +239,7 @@
       </div>
       
       <div class="grid__row">
-        <grid-card 
+        <grid-card @toggleGridCard="toggleGridCard($event)" 
           title="Graduation Project" 
           description="Thesis, work in progress." 
           backgroundImage="/vue-portfolio/media-tech/Schermafbeelding_2024-12-27_143717.png" 
@@ -246,7 +256,6 @@
 <script>
 import SectionComponent from "./SectionComponent.vue";
 import GridCard from "./GridCard.vue";
-import Photo1 from "../assets/img/logo-vue.svg"
 export default {
   components: {
     SectionComponent,
@@ -254,13 +263,41 @@ export default {
   },
   data() {
     return {
+      hasFocusedElement: this.hasFocusedElement,
+      lastFocusedElement: this.lastFocusedElement
     }
   },
   methods: {
-    getImagePath(path) {
-      console.log( new URL(path, import.meta.url))
-      return new URL(path, import.meta.url).href
+    toggleGridCard(payload) {
+      let {newState, isOverlay, element, disableUnfold, event} = payload
+      if(disableUnfold) {
+        return
+      }
+      this.hasFocusedElement = newState
+      if(element) {
+        this.lastFocusedElement = element
+      }
 
+      let height = 0
+      const gridCardEl = this.lastFocusedElement
+      const gridListEl = gridCardEl.querySelector(".grid__card__list")
+
+      if(isOverlay || event.explicitOriginalTarget?.className == "grid__card__overlay") {
+        gridListEl.setAttribute('style', 'height: ' + height + 'px')
+        gridCardEl.blur()
+        return
+      }
+      if(gridListEl) {
+        if(newState) {
+          const gridListItems = gridListEl.querySelectorAll(".grid__card__list-item")
+          gridListItems.forEach(el => {
+            height += parseInt(getComputedStyle(el).height)
+          });
+        }
+        if(newState || (event.relatedTarget && event.relatedTarget.className == "grid__card") || (event.relatedTarget && !event.relatedTarget.closest(".grid__card"))) {
+          gridListEl.setAttribute('style', 'height: ' + height + 'px')
+        }
+      }
     }
   }
 }

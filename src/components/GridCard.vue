@@ -1,9 +1,9 @@
 <template>
-    <div @keydown.left="selectedIndex == null ? switchGridCard($event, false) : decreaseSelection()" @keydown.right="selectedIndex == null ? switchGridCard($event, true) : increaseSelection()" tabindex="0" class="grid__card" @keyup.esc="toggleGridCard($event, false)" @focusin="toggleGridCard($event, true)" @blur="toggleGridCard($event, false)" :style="'background-image: url(\''+backgroundImage+'\')'">
+    <div @keydown.left="selectedIndex == null ? switchGridCard($event, false) : decreaseSelection()" @keydown.right="selectedIndex == null ? switchGridCard($event, true) : increaseSelection()" tabindex="0" class="grid__card" @focusin="toggleGridCard($event, true)" @blur="toggleGridCard($event, false)" :style="'background-image: url(\''+backgroundImage+'\')'">
         <div class="grid__card-content__wrapper">
-            <h2 class="grid__card-title text-l text-l">{{ title }}</h2>
+            <h2 class="grid__card-title text-l">{{ title }}</h2>
             <p class="grid__card-subtitle text-xs">{{ description }}</p>
-            <div v-if="disableUnfold" class="grid__card-hover-text">
+            <div v-if="disableUnfold" class="grid__card-hover-text text-xs">
               <slot></slot>
             </div>
         </div>
@@ -46,6 +46,7 @@ export default {
   components: {
     SectionComponent,
   },
+  emits: ['toggleGridCard'],
   props: ['title', 'description', 'text', 'heroImage', 'backgroundImage', 'heroVideo', 'media', 'disableUnfold'],
     data() {
     return {
@@ -62,26 +63,8 @@ export default {
     }
   },
   methods: {
-    toggleGridCard(event, newState) {
-      if(this.disableUnfold) {
-        return
-      }
-      let height = 0
-      const gridCardEl = event.target
-      const gridListEl = gridCardEl.querySelector(".grid__card__list")
-      if(gridListEl) {
-        if(newState) {
-          const gridListItems = gridListEl.querySelectorAll(".grid__card__list-item")
-          gridListItems.forEach(el => {
-            height += parseInt(getComputedStyle(el).height)
-          });
-        } else {
-          event.target.blur()
-        }
-        if(newState || !event.relatedTarget || (event.relatedTarget && event.relatedTarget.className == "grid__card") || (event.relatedTarget && !event.relatedTarget.closest(".grid__card"))) {
-          gridListEl.setAttribute('style', 'height: ' + height + 'px')
-        }
-      }
+    toggleGridCard(event, newState, isOverlay) {
+      this.$emit('toggleGridCard', {'event': event, 'newState': newState, 'isOverlay': isOverlay, 'element': this.$el, 'disableUnfold': this.disableUnfold} )
     },
     preventClose(event) {
       event.preventDefault()
@@ -106,7 +89,7 @@ export default {
           event.target.previousSibling.focus()
         } else {
           if(event.target.parentElement.previousSibling) {
-            event.target.parentElement.previousSibling.lastChild.focus()
+            event.target.parentElement.previousSibling.lastChild?.focus()
           }
         }
       }
