@@ -13,7 +13,7 @@
     </div>
     <div class="footer__image-wrapper">
       <img class="footer__image" src="../assets/img/cern.jpg"/>
-      <p class="text-xs">The ATLAS control room at CERN</p>
+      <p class="text-xs">The ATLAS control room at CERN, Geneva</p>
     </div>
   </footer>
 </template>

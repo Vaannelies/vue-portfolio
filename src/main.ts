@@ -79,15 +79,17 @@ function setToolsContainerEventListener() {
     { name: "WordPress", image: new URL("./assets/img/logo-wp.svg", import.meta.url).href  },
     { name: "SQL", image: new URL("./assets/img/logo-sql.svg", import.meta.url).href  },
     { name: "Figma", image: new URL("./assets/img/logo-figma.svg", import.meta.url).href  },
-    { name: "LESS", image: new URL("./assets/img/logo-less.svg", import.meta.url).href  },
     { name: "Processing", image: new URL("./assets/img/logo-processing.svg", import.meta.url).href  },
     { name: "CSS", image: new URL("./assets/img/logo-css.svg", import.meta.url).href  },
+    { name: "Less", image: new URL("./assets/img/logo-less.svg", import.meta.url).href  },
     { name: "Smarty", image: new URL("./assets/img/logo-smarty.svg", import.meta.url).href  },
     { name: "Twig", image: new URL("./assets/img/logo-twig.svg", import.meta.url).href  },
     { name: "PlugData", image: new URL("./assets/img/logo-pd.svg", import.meta.url).href  },
     { name: "Kotlin", image: new URL("./assets/img/logo-kotlin.svg", import.meta.url).href  },
     { name: "Laravel", image: new URL("./assets/img/logo-laravel.svg", import.meta.url).href  },
     { name: "Raspberry Pi", image: new URL("./assets/img/logo-raspberry-pi.png", import.meta.url).href  },
+    { name: "Jupyter Notebook", image: new URL("./assets/img/logo-jupyter-notebook.png", import.meta.url).href  },
+    { name: "Overleaf / LaTeX", image: new URL("./assets/img/logo-overleaf.png", import.meta.url).href  },
   ];
 
   let toolsContainerExpanded = false;

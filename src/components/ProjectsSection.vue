@@ -52,7 +52,7 @@
       <div tabindex="0" class="project__card" @focus="toggleProjectCard($event, true)" @blur="toggleProjectCard($event, false)">
         <div class="project__card-content__wrapper">
           <h2 class="project__card-title text-l">hardware</h2>
-          <p class="project__card-subtitle text-xs">Rapid prototyping, soldering, robotsArduino, Raspberry Pi, IoT, soldering, smart objects, robots</p>
+          <p class="project__card-subtitle text-xs">Rapid prototyping, soldering, robots, Arduino, Raspberry Pi, IoT, smart objects</p>
         </div>
         <div class="project__card__list">
           <div class="project__card__list-item">
