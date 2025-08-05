@@ -24,7 +24,7 @@
       <div tabindex="0" class="project__card" @focus="toggleProjectCard($event, true)" @blur="toggleProjectCard($event, false)">
         <div class="project__card-content__wrapper">
           <h2 class="project__card-title text-l">back-end</h2>
-          <p class="project__card-subtitle text-xs">(REST) APIs, database queries (CRUD), creating endpoints, data validation, securtiy</p>
+          <p class="project__card-subtitle text-xs">(REST) APIs, database queries (CRUD), creating endpoints, data validation, security</p>
         </div>
         <div class="project__card__list">
           <div class="project__card__list-item">

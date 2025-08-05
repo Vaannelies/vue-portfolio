@@ -61,7 +61,8 @@ function loopEl(el: HTMLElement, a: number) {
       const newEl: any = el.cloneNode(true);
       newEl.setAttribute(
         "style",
-        `top: -${10 * i}px; left: -${10 * i}px; position: absolute; opacity: ${
+        // `top: -${10 * i}px; left: -${10 * i}px; position: absolute; opacity: ${
+        `transform: translate(-${10 * i}px, -${10 * i}px); position: absolute; opacity: ${
           1 - i / 20
         };`
       );
