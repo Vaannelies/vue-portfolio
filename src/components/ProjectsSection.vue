@@ -1,7 +1,7 @@
 <template>
   <section-component :title="'projects'">
     <div class="projects__container">
-      <div tabindex="0" class="project__card" @focus="toggleProjectCard($event, true)" @blur="toggleProjectCard($event, false)">
+      <div tabindex="0" class="project__card" @click="toggleProjectCard($event, true)" @focus="toggleProjectCard($event, true)" @blur="toggleProjectCard($event, false)">
         <div class="project__card-content__wrapper">
           <h2 class="project__card-title text-l text-l">front-end</h2>
           <p class="project__card-subtitle text-xs">Websites, web apps, native apps (Android)</p>
@@ -21,7 +21,7 @@
           </div>
         </div>
       </div>
-      <div tabindex="0" class="project__card" @focus="toggleProjectCard($event, true)" @blur="toggleProjectCard($event, false)">
+      <div tabindex="0" class="project__card" @click="toggleProjectCard($event, true)" @focus="toggleProjectCard($event, true)" @blur="toggleProjectCard($event, false)">
         <div class="project__card-content__wrapper">
           <h2 class="project__card-title text-l">back-end</h2>
           <p class="project__card-subtitle text-xs">(REST) APIs, database queries (CRUD), creating endpoints, data validation, security</p>
@@ -38,7 +38,7 @@
           </div>
         </div>
       </div>
-      <div tabindex="0" class="project__card" @focus="toggleProjectCard($event, true)" @blur="toggleProjectCard($event, false)">
+      <div tabindex="0" class="project__card" @click="toggleProjectCard($event, true)" @focus="toggleProjectCard($event, true)" @blur="toggleProjectCard($event, false)">
         <div class="project__card-content__wrapper">
           <h2 class="project__card-title text-l">UX</h2>
           <p class="project__card-subtitle text-xs">Accessibility, interviews, journey maps, personas, user flows, usability testing, info architecture, paper prototypes, empathy maps, user stories, wireframes</p>
@@ -49,7 +49,7 @@
           </div>
         </div>
       </div>
-      <div tabindex="0" class="project__card" @focus="toggleProjectCard($event, true)" @blur="toggleProjectCard($event, false)">
+      <div tabindex="0" class="project__card" @click="toggleProjectCard($event, true)" @focus="toggleProjectCard($event, true)" @blur="toggleProjectCard($event, false)">
         <div class="project__card-content__wrapper">
           <h2 class="project__card-title text-l">hardware</h2>
           <p class="project__card-subtitle text-xs">Rapid prototyping, soldering, robots, Arduino, Raspberry Pi, IoT, smart objects</p>
