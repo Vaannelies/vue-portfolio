@@ -1,0 +1,77 @@
+
+.hobby__card {
+    width: 100%;
+    max-width: 208px;
+    height: 256px;
+    position: relative;
+    border-radius: 15px;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.1s linear;
+    user-select: none;
+
+    .hobby__card-title {
+        margin: 22px;
+        color: var(--c-primary);
+        text-align: left;
+        line-height: 80%;
+    }
+    
+    img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+}
+.hobby__card--guitar {
+    img {
+        bottom: -5px;
+    }
+    &:hover, &:focus-within {
+        background-color: #BADEFF;
+        p {
+            color: white;
+        }
+    }
+}
+.hobby__card--travel {
+    img {
+        right: -10px;
+        bottom: -40px;
+
+    }
+    &:hover, &:focus-within {
+        background-color: #E5D5FF;
+        p {
+            color: white;
+        }
+    }
+}
+.hobby__card--coding {
+    img {
+        bottom: -30px;
+        right: -30px;
+    }
+    &:hover, &:focus-within {
+        background-color: var(--c-primary);
+        p {
+            color: white;
+        }
+    }
+}
+.hobby__card--craft {
+    img {
+        bottom: 0;
+        right: -10px;
+    }
+    &:hover, &:focus-within {
+        background-color: #E0D1A0;
+        p {
+            color: white;
+        }
+    }
+}

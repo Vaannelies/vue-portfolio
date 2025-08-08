@@ -105,7 +105,7 @@ function setToolsContainerEventListener() {
           const img = document.createElement("img");
           img.src = tool.image;
           const div = document.createElement("div");
-          div.className = "grid-item";
+          div.className = "grid-item text-s";
           div.appendChild(img);
           div.append(tool.name);
           toolsContainerEl?.children[0]?.appendChild(div);
