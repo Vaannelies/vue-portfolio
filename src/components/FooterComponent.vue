@@ -2,7 +2,7 @@
   <footer>
     <div class="footer__contact-wrapper">
       <div class="footer__contact-container">
-          <h2 class="text-l">let's connect</h2>
+          <h2 class="title">let's connect</h2>
           <div class="footer__icons">
               <a target="_blank" href="https://linkedin.com/in/anneliesvaandrager" class="footer__icon"><img src="../assets/img/linkedin-app-white-icon.png"/></a>
               <a target="_blank" href="https://github.com/Vaannelies" class="footer__icon"><img src="../assets/img/github-white-icon.png"/></a>

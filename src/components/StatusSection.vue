@@ -8,37 +8,37 @@
             alt=""
         />
         <table class="status-text__container">
-            <tr class="status-text__container-row status-text__container-row--header text-m"><td colspan="2">Full-Stack developer <span class="status-text__container-label text-xs">@Internetbureau Slik</span></td></tr>
-            <tr class="status-text__container-row text-s">
+            <tr class="status-text__container-row status-text__container-row--header title-s"><td colspan="2">Full-Stack developer <span class="status-text__container-label text-xs">@Internetbureau Slik</span></td></tr>
+            <tr class="status-text__container-row text">
                 <td>
                     <label>Age:</label>
                 </td>
                 <td>
-                    <p class="text-s">{{ age }}</p>
+                    <p>{{ age }}</p>
                 </td>
             </tr>
-            <tr class="status-text__container-row text-s">
+            <tr class="status-text__container-row text">
                 <td>
                     <label>Degree:</label>
                 </td>
                 <td>
-                    <p class="text-s">MSc Media Technology, Leiden University</p>
+                    <p>MSc Media Technology, Leiden University</p>
                 </td>
             </tr>
-            <tr class="status-text__container-row text-s">
+            <tr class="status-text__container-row text">
                 <td>
                     <label>Languages:</label>
                 </td>
                 <td>
-                    <p class="text-s">Dutch, English</p>
+                    <p>Dutch, English</p>
                 </td>
             </tr>
-            <tr class="status-text__container-row text-s">
+            <tr class="status-text__container-row text">
                 <td>
                     <label>Location:</label>
                 </td>
                 <td>
-                    <p class="text-s">Rotterdam</p>
+                    <p>Rotterdam</p>
                 </td>
             </tr>
         </table>
