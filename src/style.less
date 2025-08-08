@@ -1,4 +1,6 @@
-@primary: #5B86A5;
+:root {
+    --c-primary: #5998D6;
+}
 
 body {
     margin: 0;
@@ -244,7 +246,7 @@ body {
     .section__title {
         font-size: 89px;
         font-family: 'PlusJakartaSansExtraBold';
-        color: #5B86A5;
+        color: var(--c-primary);
         margin-bottom: 48px;
         margin-top: 0;
         line-height: 71px;
@@ -276,7 +278,7 @@ body {
         border-spacing: 0;;
         .status-text__container-row {
             height: 78px;
-            color: #5B86A5;
+            color: var(--c-primary);
             text-align: left;
       
             td {
@@ -313,7 +315,7 @@ body {
         .status-text__container-row--header td {
             position: relative;
             background-color: #f7f7f7;
-            color: #5B86A5;
+            color: var(--c-primary);
             font-family: 'PlusJakartaSansExtraBold';
             padding: 0 35px;
             border-radius: 15px 15px 0 0;
@@ -334,7 +336,7 @@ body {
             display: flex;
             align-items: center;
             padding: 0 16px;
-            background-color: #5B86A5;
+            background-color: var(--c-primary);
             color: white;
             font-family: 'Plus Jakarta Sans';
             border-radius: 0 0 19px 19px;
@@ -366,7 +368,7 @@ body {
 
     .hobby__card-title {
         margin: 22px;
-        color: #5B86A5;
+        color: var(--c-primary);
         text-align: left;
         line-height: 80%;
     }
@@ -408,7 +410,7 @@ body {
         right: -30px;
     }
     &:hover, &:focus-within {
-        background-color: #42598B;
+        background-color: var(--c-primary);
         p {
             color: white;
         }
@@ -501,7 +503,7 @@ body {
         pointer-events: none;
         width: 100%;
         height: fit-content;
-        background-color: #5B86A5;
+        background-color: var(--c-primary);
         color: white;
         box-sizing: border-box;
         transition: background 0.07s linear, border-radius 0.8s ease-out 0.28s;
@@ -517,7 +519,7 @@ body {
             transition: height 0.3s ease-out;
             .project__card__list-item {
                 min-height: 200px;
-                color: #5B86A5;
+                color: var(--c-primary);
                 padding: 18px;
                 box-sizing: border-box;
                 .project__card__list-item__picture {
@@ -543,7 +545,7 @@ body {
         }
         &:focus {
             background-color: #E6F5FF;
-            color: #5B86A5;
+            color: var(--c-primary);
             transition: border-radius 0s linear;
 
             .project__card__list {
@@ -612,7 +614,7 @@ body {
     .grid__card {
         width: 100%;
         height: fit-content;
-        background-color: #5B86A5 !important;
+        background-color: var(--c-primary) !important;
         background-repeat: no-repeat;
         background-size: 0;
         color: white;
@@ -656,7 +658,7 @@ body {
                 display: flex;
                 flex-direction: row;
                 height: 80vh;
-                color: #5B86A5;
+                color: var(--c-primary);
                 box-sizing: border-box;
                 cursor: initial;
                 .grid__card__list-item__picture {
@@ -801,7 +803,7 @@ footer {
     height: 500px;
     overflow: visible;
     margin: auto;
-    background-color: #5B86A5;
+        background-color: var(--c-primary);
     display: flex;
     align-items: flex-start;
     padding-top: 80px;
@@ -1116,7 +1118,7 @@ footer {
 
             &:focus {
                 background-color: #E6F5FF;
-                color: #5B86A5;
+                color: var(--c-primary);
                 height: fit-content;
                 &:first-child {
                     border-radius: 20px 20px 0 0;
