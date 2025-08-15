@@ -4,8 +4,8 @@
     width: 100%;
     position: relative;
     overflow-x: clip;
-
 }
+
 .hero {
     height: calc(100vh - 60px);
     transition: width 0.2s;
@@ -34,6 +34,7 @@
         animation-iteration-count: 1;
         animation-delay: 3s;
         animation-fill-mode: forwards;
+
         .personal__title {
             width: fit-content;
             padding: 2px 8px;
@@ -45,6 +46,7 @@
             filter: drop-shadow(white 8px 8px);
             transition: rotate 1s;
         }
+
         .personal__picture {
             width: 350px;
             max-height: 80vh;
@@ -53,6 +55,7 @@
             shape-outside: 2px white;
             filter: drop-shadow(white 16px 16px); 
         }
+        
         &:hover, &:focus-within {
             .personal__title {
                 rotate: 720deg;
@@ -60,9 +63,12 @@
         }
     }
 
+    .personal__container--no-blink {
+        animation: fade-in 1s linear forwards;
+        animation-delay: 3s;
+        animation-iteration-count: 1;
+    }
 }
-
-
 
 .title-creative-developer {
     position: absolute;
