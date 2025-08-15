@@ -14,7 +14,7 @@
               <img src="../assets/img/featured_sliksvn.png" alt="Slimladen">
             </div>
         </div>
-        <button @click="$emit('openProjectWall')">More >></button>
+        <button class="button button--secondary" @click="$emit('openProjectWall')">More >></button>
     </section-component>
   </template>
   

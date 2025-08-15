@@ -1,5 +1,5 @@
 <template>
-  <section-component :title="'media technology'">
+  <section-component :title="'media technology'" imageName="study" :imageRight="true">
     <div class="media-tech__projects__container">
       <span v-if="hasFocusedElement" @click="toggleGridCard({newState: 'sldf', isOverlay: true, element: lastFocusedElement})" class="grid__card__overlay"></span>
       <div class="grid__row">

@@ -5,6 +5,7 @@
 @import 'hobby_cards.less';
 @import 'projects_wall.less';
 @import 'toggle.less';
+@import 'buttons.less';
 
 :root {
     --c-primary: #5998D6;
@@ -31,8 +32,11 @@ body {
     gap: 100px;
     padding: 100px 0;
     box-sizing: border-box;
+    overflow: hidden;
+
     &.main--no-blend {
         mix-blend-mode: normal;
+        padding-top: 0;
     }
 }
 
@@ -43,6 +47,7 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
+    position: relative;
 
     .section__title {
         color: var(--c-primary);
@@ -59,6 +64,25 @@ body {
         gap: 20px;
     }
 }
+
+.section__bg-image {
+    position: absolute;
+    top: 15%;
+    left: -30%;
+    width: 400px;
+    height: auto;
+    max-height: 100%;
+    rotate: 10deg;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+.section__bg-image--right {
+    right: -30%;
+    left: unset;
+    rotate: -10deg;
+}
+
 .status__container {
     width: 100%;
     display: flex;

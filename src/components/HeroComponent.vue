@@ -6,7 +6,7 @@
           <input type="checkbox" v-model="blinkEnabled" @change="toggleBlink" id="blinkEnabled">
           <span for="blinkEnabled" class="slider round"></span>
         </label>
-        <label for="blinkEnabled" class="blink-toggle-text">flashing content ⚡</label>
+        <label for="blinkEnabled" class="blink-toggle-text">⚡flashing content</label>
       </div>
       <div class="title-creative"></div>
       <div class="personal__container" ref="personalContainer" tabindex="0">
