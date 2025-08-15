@@ -1,5 +1,5 @@
 <template>
-  <section-component :title="'projects'">
+  <section-component :title="'methods'">
     <div class="projects__container">
       <div tabindex="0" class="project__card" @click="toggleProjectCard($event, true)" @focus="toggleProjectCard($event, true)" @blur="toggleProjectCard($event, false)">
         <div class="project__card-content__wrapper spacing-gap">

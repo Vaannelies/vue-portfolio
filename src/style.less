@@ -3,6 +3,8 @@
 @import 'typography.less';
 @import 'hero.less';
 @import 'hobby_cards.less';
+@import 'projects_wall.less';
+@import 'toggle.less';
 
 :root {
     --c-primary: #5998D6;
@@ -50,8 +52,11 @@ body {
 
     .section__content {
         display: flex;
+        flex-direction: column;
         width: 100%;
         justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
     }
 }
 .status__container {
@@ -250,7 +255,6 @@ body {
         FOR TEMPORARILY DISABLING THE PROJECTS CARDS!! REMOVE THIS LINE OF CODE LATER! */
         pointer-events: none;
         width: 100%;
-        height: 100%;
         background-color: var(--c-primary);
         color: white;
         padding: 20px 8px;

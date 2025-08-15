@@ -5,13 +5,14 @@
     <StatusSection/>
     <HobbiesSection/>
     <ToolsSection/>
-    <FeaturedProjectsSection/>
+    <FeaturedProjectsSection @openProjectWall="showProjectsWall = true"/>
     <ProjectsSection/>
   </div>
   <div class="main main--no-blend">
     <MediaTechSection/>
   </div>
   <FooterComponent/>
+  <ProjectsWall :visible="showProjectsWall" @closeProjectWall="showProjectsWall = false"/>
 </template>
 
 <script lang="ts">
@@ -24,7 +25,7 @@ import FeaturedProjectsSection from "./components/FeaturedProjectsSection.vue";
 import ToolsSection from "./components/ToolsSection.vue";
 import ProjectsSection from "./components/ProjectsSection.vue";
 import MediaTechSection from "./components/MediaTechSection.vue";
-
+import ProjectsWall from "./components/ProjectsWall.vue";
 
 @Options({
   components: {
@@ -36,9 +37,12 @@ import MediaTechSection from "./components/MediaTechSection.vue";
     ProjectsSection,
     MediaTechSection,
     FeaturedProjectsSection,
+    ProjectsWall,
   },
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+  showProjectsWall = false;
+}
 </script>
 
 <style>

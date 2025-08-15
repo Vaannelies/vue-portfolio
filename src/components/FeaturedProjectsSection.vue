@@ -1,15 +1,20 @@
 <template>
-    <section-component :title="''">
+    <section-component :title="'ask me about...'">
         <div class="cards__container spacing-gap-l">
-            <div class="card featured-projects__card" tabindex="0">
+            <a class="card featured-projects__card" tabindex="0" target="_blank" href="https://p1.nl">
               <p class="card-title featured-projects__card-title text-xs">P1 website</p>
               <img src="../assets/img/featured_p1.png" alt="Slimladen">
-            </div>
-            <div class="featured-projects__card" tabindex="0">
+            </a>
+            <div class="card featured-projects__card" tabindex="0" target="_blank" href="https://p1.nl">
               <p class="card-title featured-projects__card-title text-xs">Slimladen Android app</p>
               <img src="../assets/img/featured_slimladen.png" alt="Slimladen">
             </div>
+            <div class="card featured-projects__card" tabindex="0" target="_blank" href="https://p1.nl">
+              <p class="card-title featured-projects__card-title text-xs">SlikSVN Panel (WIP)</p>
+              <img src="../assets/img/featured_sliksvn.png" alt="Slimladen">
+            </div>
         </div>
+        <button @click="$emit('openProjectWall')">More >></button>
     </section-component>
   </template>
   
@@ -22,7 +27,11 @@
       SectionComponent,
     },
   })
-  export default class HobbiesSection extends Vue {}
+  export default class HobbiesSection extends Vue {
+    openProjectWall() {
+      this.$emit("openProjectWall");
+    }
+  }
   </script>
   
   <style>

@@ -2,6 +2,7 @@ import { createApp } from "vue";
 import App from "./App.vue";
 
 createApp(App).mount("#app");
+let blinkEnabled = window.localStorage.getItem('blinkEnabled') !== 'false';
 
 window.addEventListener("DOMContentLoaded", () => {
   const creativeTextEl: HTMLElement | null =
@@ -43,15 +44,21 @@ function blinkText(el: HTMLElement, a: number) {
   });
 
   const hero: HTMLElement | null = document.querySelector(".hero");
+  if(!hero) return;
+
   hero?.setAttribute("style", "background: black");
 
-  for (let i = 0; i < a; i++) {
-    setTimeout(() => {
-      hero?.setAttribute("style", "background: white");
-    }, 200 * i);
-    setTimeout(() => {
-      hero?.setAttribute("style", "background: black");
-    }, 200 * i + 100);
+  if(blinkEnabled) {
+    for (let i = 0; i < a; i++) {
+      setTimeout(() => {
+        hero?.setAttribute("style", "background: white");
+      }, 200 * i);
+      setTimeout(() => {
+        hero?.setAttribute("style", "background: black");
+      }, 200 * i + 100);
+    }
+  } else {
+    hero.style.transition = "width 0.2s, background 1s ease-out";
   }
 }
 
