@@ -67,20 +67,6 @@
           We used a projector to project the red lines of the previous participants on the wall.
         </grid-card>
         <grid-card @toggleGridCard="toggleGridCard($event)" 
-          title="Hardware and Physical Computing" 
-          description="Soldering and working with sensors and actors on an Arduino" 
-          backgroundImage="/vue-portfolio/media-tech/image_2024-12-27_19-02-02.png" 
-          heroVideo="/vue-portfolio/media-tech/Video van WhatsApp op 2024-01-16 om 13.05.53_92de3586.mp4"
-          :media="[
-            {type: 'video', path: '/vue-portfolio/media-tech/Video van WhatsApp op 2024-01-16 om 13.05.53_92de3586.mp4'},
-            {type: 'image', path: '/vue-portfolio/media-tech/image_2024-12-27_18-49-49.png'},
-            {type: 'image', path: '/vue-portfolio/media-tech/image_2024-12-27_19-02-02.png'}
-          ]">
-          In a team, I created a small escape room. We created a vault that was locked with a lever connected to a servo. The vault would automatically open if the player entered the right password in the device we created. 
-          In order to reach the vault, the player had to cross an obstacle that consisted of red wires with tiny bells on it. If you touched a wire, the bells would trigger a sound sensor.
-          The player had to guess the password based on a rebus we made.
-        </grid-card>
-        <grid-card @toggleGridCard="toggleGridCard($event)" 
           title="Human Computer Interaction and Information Visualization" 
           description="UX" 
           backgroundImage="/vue-portfolio/media-tech/image_2024-12-27_21-15-00.png" 
@@ -173,15 +159,6 @@
           With a teammate, I crafted an interactive peephole box. A scientic paper reported that bees stop humming during a solar eclipse.
           We wanted to visualize this phenomenon in a creative way. Using a light sensor, a servo motor and a buzzer, we triggered an Arduino to cover the light-hole of the box with a cardboard "moon" whenever a person covered the top of the box using the "solar eclipse activator lid".
         </grid-card>
-        <grid-card @toggleGridCard="toggleGridCard($event)" 
-        title="Research Fundamentals" 
-        description="Scientific research" 
-        backgroundImage="/vue-portfolio/media-tech/image_2024-12-27_20-29-43.png" 
-        heroImage="/vue-portfolio/media-tech/image_2024-12-27_20-29-43.png"
-        >
-        I wrote a <a href="/vue-portfolio/media-tech/7-papers-assignment_annelies_vaandrager_s3624587.pdf" target="_blank">literature review</a> about papers about retrograde cricopharyngeal dysfunction (R-CPD).
-     
-        </grid-card>
       </div>
         
       <div class="grid__row">
@@ -201,16 +178,19 @@
           The robot is voice activated and it takes a natural language prompt as input. You can tell it the brand of the soda can you want it to pick up, and it will understand which color it has to look for.
           For this course, I also wrote an algorithm for a simulated vacuum cleaner that had to navigate through different rooms using a LIDAR.
         </grid-card>
-        <grid-card
-          @toggleGridCard="toggleGridCard($event)"
-          title="Sciences and Humanities" 
-          description="Philosophers' views on truth" 
-          backgroundImage="/vue-portfolio/media-tech/image_2024-12-28_19-55-44.png" 
-          heroImage="/vue-portfolio/media-tech/image_2024-12-28_19-55-44.png"
-          >
-          A teammate and I created a plan for a hypothetical exhibition at the Observatory of
-          Leiden University.
-          <a target="_blank" href="/vue-portfolio/media-tech/Science_and_Humanities_Final_Assignment.docx.pdf">View</a>
+        <grid-card @toggleGridCard="toggleGridCard($event)" 
+          title="Hardware and Physical Computing" 
+          description="Soldering and working with sensors and actors on an Arduino" 
+          backgroundImage="/vue-portfolio/media-tech/image_2024-12-27_19-02-02.png" 
+          heroVideo="/vue-portfolio/media-tech/Video van WhatsApp op 2024-01-16 om 13.05.53_92de3586.mp4"
+          :media="[
+            {type: 'video', path: '/vue-portfolio/media-tech/Video van WhatsApp op 2024-01-16 om 13.05.53_92de3586.mp4'},
+            {type: 'image', path: '/vue-portfolio/media-tech/image_2024-12-27_18-49-49.png'},
+            {type: 'image', path: '/vue-portfolio/media-tech/image_2024-12-27_19-02-02.png'}
+          ]">
+          In a team, I created a small escape room. We created a vault that was locked with a lever connected to a servo. The vault would automatically open if the player entered the right password in the device we created. 
+          In order to reach the vault, the player had to cross an obstacle that consisted of red wires with tiny bells on it. If you touched a wire, the bells would trigger a sound sensor.
+          The player had to guess the password based on a rebus we made.
         </grid-card>
         <grid-card @toggleGridCard="toggleGridCard($event)" 
           title="Sound, Space and Interaction" 
@@ -228,14 +208,6 @@
           If the person quickly points the light in a certain direction, the ghosts make a squeal sound before they "run" away, as if the ghosts were startled.
 
 
-        </grid-card>
-        <grid-card @toggleGridCard="toggleGridCard($event)" 
-          title="Strategies in Creative and Performing Arts" 
-          description="" 
-          backgroundImage="/vue-portfolio/media-tech/image_2024-12-28_22-33-38.png" 
-          heroImage="/vue-portfolio/media-tech/image_2024-12-28_22-33-38.png"
-        >
-          For this course, I invented a new art strategy: invisible effort. <a href="/vue-portfolio/media-tech/Final assignment.pdf" target="_blank">View</a>
         </grid-card>
       </div>
       
