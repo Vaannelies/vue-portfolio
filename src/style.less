@@ -9,6 +9,9 @@
 
 :root {
     --c-primary: #5998D6;
+    --border-radius: 15px;
+    --border-radius-s: 8px;
+    --border-radius-xs: 5px;
 }
 
 body {
@@ -92,7 +95,7 @@ body {
         display: inline;
         object-fit: cover;
         width: 300px;
-        border-radius: 15px;
+        border-radius: var(--border-radius);
         /* filter: contrast(120%) saturate(120%); */
     }
     
@@ -100,7 +103,7 @@ body {
         width: 100%;
         padding: 0;
         margin: 0;
-        border-radius: 15px;
+        border-radius: var(--border-radius);
         border-spacing: 0;;
         .status-text__container-row {
             height: 78px;
@@ -192,7 +195,7 @@ body {
     max-height: 300px;
     display: flex;
     position: relative;
-    border-radius: 15px;
+    border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
@@ -211,7 +214,7 @@ body {
     width: 100%;
     padding: 40px 150px;
     background: #F7F7F7;
-    border-radius: 15px;
+    border-radius: var(--border-radius);
     box-sizing: border-box;
 }
 .tools__container {
@@ -234,7 +237,7 @@ body {
         align-items: center;
         background-color: white;
         font-family: 'Plus Jakarta Sans';
-        border-radius: 5px;;
+        border-radius: var(--border-radius-xs);
         text-wrap: nowrap;
         box-sizing: border-box;
         color: black;
@@ -471,7 +474,7 @@ body {
             gap: 10px;
             margin: 28px;
             padding-left: 0;
-            border-radius: 8px;
+            border-radius: var(--border-radius-s);
             border: 12px solid white;
             background-color: white;
         }
@@ -530,7 +533,7 @@ body {
                 max-height: 80%;
                 max-width: 80%;
                 object-fit: contain;
-                border-radius: 15px;
+                border-radius: var(--border-radius);
             }
             .pop-up__arrows {
                 display: flex;
