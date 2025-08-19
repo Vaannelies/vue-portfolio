@@ -17,6 +17,7 @@
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
+import { defineAsyncComponent } from "vue";
 import HeroComponent from "./components/HeroComponent.vue";
 import FooterComponent from "./components/FooterComponent.vue";
 import StatusSection from "./components/StatusSection.vue";
@@ -24,8 +25,12 @@ import HobbiesSection from "./components/HobbiesSection.vue";
 import FeaturedProjectsSection from "./components/FeaturedProjectsSection.vue";
 import ToolsSection from "./components/ToolsSection.vue";
 import ProjectsSection from "./components/ProjectsSection.vue";
-import MediaTechSection from "./components/MediaTechSection.vue";
 import ProjectsWall from "./components/ProjectsWall.vue";
+
+// Lazy load de grote MediaTechSection component
+const MediaTechSection = defineAsyncComponent(() => 
+  import("./components/MediaTechSection.vue")
+);
 
 @Options({
   components: {
