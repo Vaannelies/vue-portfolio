@@ -387,7 +387,6 @@ body {
     &:focus-within {
         + .grid__row {
             transition: margin-top 0.3s ease-out;
-            margin-top: 80vh;
         }
     }
 
@@ -437,13 +436,14 @@ body {
             z-index: 100;
             transition: height 0.3s ease-out;
             background-color: #E6F5FF;
+
             .grid__card__list-item {
                 display: flex;
                 flex-direction: row;
-                height: 80vh;
                 color: var(--c-primary);
                 box-sizing: border-box;
                 cursor: initial;
+
                 .grid__card__list-item__picture {
                     width: 50%;
                     object-fit: cover;
@@ -631,6 +631,7 @@ footer {
             object-fit: cover;
             border-top-left-radius: 28px;
         }
+
         p {
             position: absolute;
             bottom: 0;
@@ -639,12 +640,46 @@ footer {
             margin: 0;
             color: white;
             background-color: rgba(0, 0, 0, 0.392);
-            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.1s ease-out;
+            text-align: left;
         }
+
         &:hover p {
             visibility: visible;
+            opacity: 1;
+        }
+
+        &:hover .footer__image__button {
+            opacity: 1;
         }
     }
+
+    .footer__image__button {
+        width: 36px;
+        height: 36px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        transform: translateY(-50%);
+        transition: opacity 0.1s ease-out;
+        color: var(--c-primary);
+
+        &:last-child {
+            left: unset;
+            right: 12px;
+        }
+
+        &:hover, &:focus {
+            color: white;
+        }
+    }
+
     .footer__icons {
         display: flex;
         gap: 12px;

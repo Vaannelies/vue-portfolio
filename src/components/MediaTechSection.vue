@@ -260,15 +260,23 @@ export default {
         gridListEl.setAttribute('style', 'height: ' + height + 'px')
         gridCardEl.blur()
         document.activeElement.blur()
+        document.querySelectorAll(".grid__row").forEach(el => {
+          el.setAttribute('style', 'margin-top: 0px')
+        })
         return
       }
+
       if(gridListEl) {
         if(newState) {
           const gridListItems = gridListEl.querySelectorAll(".grid__card__list-item")
           gridListItems.forEach(el => {
             height += parseInt(getComputedStyle(el).height)
           });
+          gridListEl.closest(".grid__row").nextElementSibling?.setAttribute('style', 'margin-top: ' + height + 'px')
+        } else {
+          gridListEl.closest(".grid__row").nextElementSibling?.setAttribute('style', 'margin-top: 0px')
         }
+        
         if(newState || !event.relatedTarget || (event.relatedTarget && event.relatedTarget.className == "grid__card") || (event.relatedTarget && !event.relatedTarget.closest(".grid__card"))) {
           gridListEl.setAttribute('style', 'height: ' + height + 'px')
         }
