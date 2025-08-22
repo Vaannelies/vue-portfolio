@@ -228,8 +228,11 @@
 </template>
 
 <script>
+import { defineAsyncComponent } from 'vue';
 import SectionComponent from "./SectionComponent.vue";
-import GridCard from "./GridCard.vue";
+
+const GridCard = defineAsyncComponent(() => import("./GridCard.vue"));
+
 export default {
   components: {
     SectionComponent,

@@ -4,7 +4,7 @@
 
         <img
             class="picture-half"
-            src="../assets/img/IMG_20230807_142920_Bokeh.png"
+            src="../assets/img/IMG_20230807_142920_Bokeh_compressed.png"
             alt=""
         />
         <table class="status-text__container">
