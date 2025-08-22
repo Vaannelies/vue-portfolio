@@ -6,7 +6,7 @@
           <h2 class="project__card-title title">front-end</h2>
           <p class="project__card-subtitle text-xs">Websites, web apps, native apps (Android)</p>
         </div>
-        <div class="project__card__list">
+        <!-- <div class="project__card__list">
           <div class="project__card__list-item">
             <img class="project__card__list-item__picture" src="../assets//img/IMG_20230807_142920_Bokeh.png" />
             <p class="text-xs">
@@ -19,14 +19,14 @@
           <div class="project__card__list-item">
             <img class="project__card__list-item__picture" src="../assets//img/IMG_20230807_142920_Bokeh.png" />
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="project__card" @click="toggleProjectCard($event, true)" @focus="toggleProjectCard($event, true)" @blur="toggleProjectCard($event, false)">
         <div class="project__card-content__wrapper spacing-gap">
           <h2 class="project__card-title title">back-end</h2>
           <p class="project__card-subtitle text-xs">(REST) APIs, database queries (CRUD), creating endpoints, data validation, security</p>
         </div>
-        <div class="project__card__list">
+        <!-- <div class="project__card__list">
           <div class="project__card__list-item">
             <img class="project__card__list-item__picture" src="../assets//img/IMG_20230807_142920_Bokeh.png" />
           </div>
@@ -36,29 +36,29 @@
           <div class="project__card__list-item">
             <img class="project__card__list-item__picture" src="../assets//img/IMG_20230807_142920_Bokeh.png" />
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="project__card" @click="toggleProjectCard($event, true)" @focus="toggleProjectCard($event, true)" @blur="toggleProjectCard($event, false)">
         <div class="project__card-content__wrapper spacing-gap">
           <h2 class="project__card-title title">UX</h2>
           <p class="project__card-subtitle text-xs">Accessibility, interviews, journey maps, personas, user flows, usability testing, info architecture, paper prototypes, empathy maps, user stories, wireframes</p>
         </div>
-        <div class="project__card__list">
+        <!-- <div class="project__card__list">
           <div class="project__card__list-item">
             <img class="project__card__list-item__picture" src="../assets//img/IMG_20230807_142920_Bokeh.png" />
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="project__card" @click="toggleProjectCard($event, true)" @focus="toggleProjectCard($event, true)" @blur="toggleProjectCard($event, false)">
         <div class="project__card-content__wrapper spacing-gap">
           <h2 class="project__card-title title">hardware</h2>
           <p class="project__card-subtitle text-xs">Rapid prototyping, soldering, robots, Arduino, Raspberry Pi, IoT, smart objects</p>
         </div>
-        <div class="project__card__list">
+        <!-- <div class="project__card__list">
           <div class="project__card__list-item">
             <img class="project__card__list-item__picture" src="../assets//img/IMG_20230807_142920_Bokeh.png" />
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section-component>
