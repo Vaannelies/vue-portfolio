@@ -37,6 +37,7 @@ import { ref } from 'vue'
 import cernImage from '../assets/img/cern.jpg'
 import mediaTechImage from '../assets/img/media-tech.jpg'
 import moonshotsImage from '../assets/img/moonshots.jpg'
+import arsElectronicaImage from '../assets/img/ars_electronica.png'
 
 const imageIndex = ref(0)
 const images = ref([
@@ -52,6 +53,10 @@ const images = ref([
     src: moonshotsImage,
     alt: 'NL Moonshots \'24, Leiden Instrument Makers School (LiS)'
   },
+  {
+    src: arsElectronicaImage,
+    alt: 'Ars Electronica, Festival for art, science and technology, Linz'
+  }
 ])
 
 const previousImage = () => {
