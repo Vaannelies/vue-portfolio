@@ -45,8 +45,16 @@
           <p class="projects-wall__item-title text-s">EVM</p>
         </div>
         <div class="projects-wall__item">
+          <img src="../assets/img/projects_wall_kbf.jpg" alt="KBF" loading="lazy"/>
+          <p class="projects-wall__item-title text-s">KBF filter</p>
+        </div>
+        <div class="projects-wall__item">
+          <img src="../assets/img/projects_wall_sjgr.jpg" alt="Stichting Je Goed Recht" loading="lazy"/>
+          <p class="projects-wall__item-title text-s">Stichting Je Goed Recht tweaks</p>
+        </div>
+        <div class="projects-wall__item">
           <img src="../assets/img/projects_wall_plugdata-wind.png" alt="PlugData simulation of wind sounds" loading="lazy"/>
-          <p class="projects-wall__item-title text-s">PlugData simulation of wind sounds</p>
+          <p class="projects-wall__item-title text-s">(School) PlugData simulation of wind sounds</p>
         </div>
         <div class="projects-wall__item">
           <img src="../assets/img/projects_wall_strings-attached.svg" alt="Strings Attached Guitar Game" loading="lazy"/>
