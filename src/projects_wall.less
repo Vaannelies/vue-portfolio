@@ -97,12 +97,15 @@
     &:nth-child(21) { animation-duration: 4.2s; }
     &:nth-child(22) { animation-duration: 4.4s; }
 
-    img {
-        width: auto;
+    picture, > img {
+        width: 100%;
         height: 100%;
         max-height: 120px;
-        width: 100%;
         object-fit: cover;
+    }
+    
+    img {
+        width: 100%;
         transition: filter 0.1s ease-in-out;
     }
 
@@ -148,7 +151,7 @@
         max-height: 100px;
         border-radius: var(--border-radius-xs);
         
-        img {
+        picture, > img {
             max-height: 100px;
         }
     }
@@ -165,7 +168,7 @@
         max-width: 150px;
         max-height: 80px;
         
-        img {
+        picture, > img {
             max-height: 80px;
         }
     }
@@ -189,7 +192,7 @@
         max-width: 180px;
         max-height: 90px;
         
-        img {
+        picture, > img {
             max-height: 90px;
         }
     }
@@ -207,7 +210,7 @@
         max-width: 180px;
         max-height: 60px;
         
-        img {
+        picture, > img {
             max-height: 60px;
         }
     }
@@ -218,7 +221,7 @@
     .projects-wall__item {
         max-height: 70px;
         max-width: unset;
-        img {
+        picture, > img {
             max-height: 70px;
         }
     }
@@ -249,7 +252,7 @@
         width: auto;
         height: 100%;
         
-        img {
+        picture, > img {
             max-height: 140px;
         }
     }
