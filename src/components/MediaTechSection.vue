@@ -21,7 +21,7 @@
           heroVideo="/vue-portfolio/media-tech/narcissus robot ‐ Gemaakt met Clipchamp (1).mp4"
           :media="[
             {type: 'video', path: '/vue-portfolio/media-tech/narcissus robot ‐ Gemaakt met Clipchamp (1).mp4'},
-            {type: 'image', path: '/vue-portfolio/media-tech/Screenshot_2023-03-23-17-34-08-886_com.miui.videoplayer[1].png'},
+            {type: 'image', path: '/vue-portfolio/media-tech/Screenshot_2023-03-23-17-34-08-886_com.miui.videoplayer[1].png', thumbnailPath: '/vue-portfolio/media-tech/Screenshot_2023-03-23-17-34-08-886_com.miui.videoplayer[1]_thumbnail.png'},
             {type: 'image', path: '/vue-portfolio/media-tech/Afbeelding van WhatsApp op 2023-03-24 om 13.27.38_d6efa77b.jpg'},
             ]"
         />
@@ -76,12 +76,12 @@
             {type: 'image', path: '/vue-portfolio/media-tech/birds_normal_list.png'},
             {type: 'image', path: '/vue-portfolio/media-tech/birds_filter.png'},
             {type: 'image', path: '/vue-portfolio/media-tech/birds_list.png'},
-            {type: 'image', path: '/vue-portfolio/media-tech/birds_map.png'},
-            {type: 'image', path: '/vue-portfolio/media-tech/birds_detail.png'},
-            {type: 'image', path: '/vue-portfolio/media-tech/birds_locations.png'},
+            {type: 'image', path: '/vue-portfolio/media-tech/birds_map.png', thumbnailPath: '/vue-portfolio/media-tech/birds_map_thumbnail.png'},
+            {type: 'image', path: '/vue-portfolio/media-tech/birds_detail.png', thumbnailPath: '/vue-portfolio/media-tech/birds_detail_thumbnail.png'},
+            {type: 'image', path: '/vue-portfolio/media-tech/birds_locations.png', thumbnailPath: '/vue-portfolio/media-tech/birds_locations_thumbnail.png'},
             {type: 'image', path: '/vue-portfolio/media-tech/birds_resources.png'},
-            {type: 'image', path: '/vue-portfolio/media-tech/storyboard1.png'},
-            {type: 'image', path: '/vue-portfolio/media-tech/storyboard2.png'},
+            {type: 'image', path: '/vue-portfolio/media-tech/storyboard1.png', thumbnailPath: '/vue-portfolio/media-tech/storyboard1_thumbnail.png'},
+            {type: 'image', path: '/vue-portfolio/media-tech/storyboard2.png', thumbnailPath: '/vue-portfolio/media-tech/storyboard2_thumbnail.png'},
             {type: 'image', path: '/vue-portfolio/media-tech/birds_diagram.png'},
           ]"
         >
@@ -134,11 +134,11 @@
         <grid-card @toggleGridCard="toggleGridCard($event)" 
           title="Non-human Cognition" 
           description="Animal behavior experiment" 
-          text="In a team, I conducted a research experiment on pigeon behavior in a teammate's backyard. We reported the observations of pigeon behavior at feeding time on a poster." 
+          text="In a team, I conducted a small research experiment on pigeon behavior in a teammate's backyard. We reported the observations of pigeon behavior at feeding time on a poster." 
           backgroundImage="/vue-portfolio/media-tech/NHC POSTER PRINT-1_thumbnail.png" 
           heroImage="/vue-portfolio/media-tech/NHC POSTER PRINT-1.png"
           :media="[
-            {type: 'image', path: '/vue-portfolio/media-tech/NHC POSTER PRINT-1.png'},
+            {type: 'image', path: '/vue-portfolio/media-tech/NHC POSTER PRINT-1.png', thumbnailPath: '/vue-portfolio/media-tech/NHC POSTER PRINT-1_thumbnail.png'},
           ]"
         />
         <grid-card @toggleGridCard="toggleGridCard($event)" 
@@ -149,10 +149,10 @@
           heroVideo="/vue-portfolio/media-tech/Video van WhatsApp op 2024-01-19 om 00.42.54_4ebd93c2.mp4"
           :media="[
             {type: 'video', path: '/vue-portfolio/media-tech/Video van WhatsApp op 2024-01-19 om 00.42.54_4ebd93c2.mp4'},
-            {type: 'image', path: '/vue-portfolio/media-tech/Afbeelding van WhatsApp op 2024-01-19 om 00.42.25_5e5aeb22.jpg'},
-            {type: 'image', path: '/vue-portfolio/media-tech/Afbeelding van WhatsApp op 2024-01-19 om 00.46.39_12a44efe.jpg'},
-            {type: 'image', path: '/vue-portfolio/media-tech/Afbeelding van WhatsApp op 2024-01-19 om 00.45.44_d920764c.jpg'},
-            {type: 'image', path: '/vue-portfolio/media-tech/Afbeelding van WhatsApp op 2024-01-19 om 00.43.27_8df6dea1.jpg'},
+            {type: 'image', path: '/vue-portfolio/media-tech/Afbeelding van WhatsApp op 2024-01-19 om 00.42.25_5e5aeb22.jpg', thumbnailPath: '/vue-portfolio/media-tech/Afbeelding van WhatsApp op 2024-01-19 om 00.42.25_5e5aeb22_thumbnail.jpg'},
+            {type: 'image', path: '/vue-portfolio/media-tech/Afbeelding van WhatsApp op 2024-01-19 om 00.46.39_12a44efe.jpg', thumbnailPath: '/vue-portfolio/media-tech/Afbeelding van WhatsApp op 2024-01-19 om 00.46.39_12a44efe_thumbnail.jpg'},
+            {type: 'image', path: '/vue-portfolio/media-tech/Afbeelding van WhatsApp op 2024-01-19 om 00.45.44_d920764c.jpg', thumbnailPath: '/vue-portfolio/media-tech/Afbeelding van WhatsApp op 2024-01-19 om 00.45.44_d920764c_thumbnail.jpg'},
+            {type: 'image', path: '/vue-portfolio/media-tech/Afbeelding van WhatsApp op 2024-01-19 om 00.43.27_8df6dea1.jpg', thumbnailPath: '/vue-portfolio/media-tech/Afbeelding van WhatsApp op 2024-01-19 om 00.43.27_8df6dea1_thumbnail.jpg'},
             
           ]"
         >

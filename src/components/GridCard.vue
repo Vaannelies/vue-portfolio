@@ -9,13 +9,13 @@
         </div>
         <div class="grid__card__list">
           <div class="grid__card__list-item">
-              <video v-if="heroVideo" muted autoplay loop class="grid__card__list-item__picture" :src="heroVideo" type="video/mp4" />
+              <video v-if="heroVideo" muted autoplay loop class="grid__card__list-item__picture" :src="heroVideo" type="video/mp4" loading="lazy" />
               <img v-else class="grid__card__list-item__picture" :src="heroImage" loading="lazy" />
               <div class="grid__card__list-item__content-wrapper">
                 <ul class="grid__card__media-list" v-if="media !== null">
                     <li class="grid__card__media-item" v-for="(item, index) in media" v-bind:key="index" @click="selectedIndex = index">
-                      <video v-if="item.type == 'video'" muted :src="item.path" type="video/mp4" loading="lazy" />
-                      <img v-else-if="item.type == 'image'" :src="item.path" loading="lazy" />
+                      <video v-if="item.type == 'video'" muted :src="item.thumbnailPath || item.path" type="video/mp4" loading="lazy" />
+                      <img v-else-if="item.type == 'image'" :src="item.thumbnailPath || item.path" loading="lazy" />
                       <iframe v-else @click="selectedIndex = index" width="80" height="80" :src="item.path" title="YouTube video player" frameborder="0" disabled referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
                     </li>
                 </ul>
