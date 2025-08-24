@@ -40,31 +40,35 @@
 <script setup>
 import { ref } from 'vue'
 import cernImage from '../assets/img/cern.jpg'
+import cernWebp from '../assets/img/cern.webp'
 import mediaTechImage from '../assets/img/media-tech.jpg'
+import mediaTechWebp from '../assets/img/media-tech.webp'
 import moonshotsImage from '../assets/img/moonshots.jpg'
+import moonshotsWebp from '../assets/img/moonshots.webp'
 import arsElectronicaImage from '../assets/img/ars_electronica.png'
+import arsElectronicaWebp from '../assets/img/ars_electronica.webp'
 
 const imageIndex = ref(0)
 const images = ref([
   {
     src: cernImage,
     alt: 'The ATLAS control room at CERN, Geneva',
-    webpSrc: '../assets/img/cern.webp'
+    webpSrc: cernWebp
   },
   {
     src: mediaTechImage,
     alt: 'Media Technology classroom, Leiden University',
-    webpSrc: '../assets/img/media-tech.webp'
+    webpSrc: mediaTechWebp
   },
   {
     src: moonshotsImage,
     alt: 'NL Moonshots \'24, Leiden Instrument Makers School (LiS)',
-    webpSrc: '../assets/img/moonshots.webp'
+    webpSrc: moonshotsWebp
   },
   {
     src: arsElectronicaImage,
     alt: 'Ars Electronica, Festival for art, science and technology, Linz',
-    webpSrc: '../assets/img/ars_electronica.webp'
+    webpSrc: arsElectronicaWebp
   }
 ])
 
