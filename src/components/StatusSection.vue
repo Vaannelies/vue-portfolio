@@ -1,12 +1,10 @@
 <template>
   <section-component :title="'status'">
     <div class="status__container">
-
-        <img
-            class="picture-half"
-            src="../assets/img/IMG_20230807_142920_Bokeh_compressed.png"
-            alt=""
-        />
+        <picture class="picture-half">
+          <source srcset="../assets/img/IMG_20230807_142920_Bokeh.webp" type="image/webp">
+          <img src="../assets/img/IMG_20230807_142920_Bokeh_compressed.png" alt="" />
+         </picture>
         <table class="status-text__container">
             <tr class="status-text__container-row status-text__container-row--header title-s"><td colspan="2">Full-Stack developer <span class="status-text__container-label text-xs">@Internetbureau Slik</span></td></tr>
             <tr class="status-text__container-row text">

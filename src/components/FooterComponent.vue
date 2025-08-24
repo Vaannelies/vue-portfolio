@@ -12,8 +12,13 @@
       </div>
     </div>
     <div tabindex="0" class="footer__image-wrapper" @keydown.right.prevent="nextImage" @keydown.left.prevent="previousImage">
-      <img class="footer__image" :src="images[imageIndex].src" loading="lazy"/>
-      <p class="text-xs">{{ images[imageIndex].alt }}</p>
+      <template v-for="image in images" :key="image.src">
+        <picture class="footer__image" v-show="images[imageIndex] === image">
+          <source :srcset="image.webpSrc" type="image/webp"/>
+          <img :src="image.src"/>
+        </picture>
+        <p v-show="images[imageIndex] === image" class="text-xs">{{ image.alt }}</p>
+      </template>
       <button class="footer__image__button button" @click="previousImage">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" id="Tailless-Triangle-Arrow-Left-1--Streamline-Core" height="16" width="16">
           <g id="tailless-triangle-arrow-left-1--arrow-keyboard-left">
@@ -43,19 +48,23 @@ const imageIndex = ref(0)
 const images = ref([
   {
     src: cernImage,
-    alt: 'The ATLAS control room at CERN, Geneva'
+    alt: 'The ATLAS control room at CERN, Geneva',
+    webpSrc: '@/assets/img/cern.webp'
   },
   {
     src: mediaTechImage,
-    alt: 'Media Technology classroom, Leiden University'
+    alt: 'Media Technology classroom, Leiden University',
+    webpSrc: '@/assets/img/media-tech.webp'
   },
   {
     src: moonshotsImage,
-    alt: 'NL Moonshots \'24, Leiden Instrument Makers School (LiS)'
+    alt: 'NL Moonshots \'24, Leiden Instrument Makers School (LiS)',
+    webpSrc: '@/assets/img/moonshots.webp'
   },
   {
     src: arsElectronicaImage,
-    alt: 'Ars Electronica, Festival for art, science and technology, Linz'
+    alt: 'Ars Electronica, Festival for art, science and technology, Linz',
+    webpSrc: '@/assets/img/ars_electronica.webp'
   }
 ])
 
