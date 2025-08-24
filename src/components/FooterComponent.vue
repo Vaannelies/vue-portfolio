@@ -49,22 +49,22 @@ const images = ref([
   {
     src: cernImage,
     alt: 'The ATLAS control room at CERN, Geneva',
-    webpSrc: '@/assets/img/cern.webp'
+    webpSrc: '../assets/img/cern.webp'
   },
   {
     src: mediaTechImage,
     alt: 'Media Technology classroom, Leiden University',
-    webpSrc: '@/assets/img/media-tech.webp'
+    webpSrc: '../assets/img/media-tech.webp'
   },
   {
     src: moonshotsImage,
     alt: 'NL Moonshots \'24, Leiden Instrument Makers School (LiS)',
-    webpSrc: '@/assets/img/moonshots.webp'
+    webpSrc: '../assets/img/moonshots.webp'
   },
   {
     src: arsElectronicaImage,
     alt: 'Ars Electronica, Festival for art, science and technology, Linz',
-    webpSrc: '@/assets/img/ars_electronica.webp'
+    webpSrc: '../assets/img/ars_electronica.webp'
   }
 ])
 

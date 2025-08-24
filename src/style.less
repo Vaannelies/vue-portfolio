@@ -44,6 +44,7 @@ body {
 
 picture {
     overflow: hidden;
+    display: block;
 }
 
 picture img {
@@ -98,7 +99,7 @@ picture img {
 .status__container {
     width: 100%;
     display: flex;
-    gap: 75px;
+    gap: 40px;
 
     .picture-half {
         display: inline;
@@ -409,8 +410,12 @@ picture img {
 
         .grid__card-content__wrapper {
             height: 220px;
-            align-content: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             padding: 0 20px;
+
             .grid__card-hover-text {
                 opacity: 0;
                 transition: opacity 0.1s linear;
@@ -418,6 +423,7 @@ picture img {
                 text-align: left;
                 height: 0;
             } 
+            
             &:hover {
                 &:has(.grid__card-hover-text) {
                     padding-top: 45px;
