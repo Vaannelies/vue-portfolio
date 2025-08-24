@@ -10,7 +10,16 @@
     transition: all 0.1s ease-out;
     transform-origin: center;
 
+    /* Hover background-color slide animation effect */
+    background-size: 100% 300%;
+    background-repeat: no-repeat;
+    background-position: top;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+
     &:hover, &:focus {
+        background-position: bottom;
         scale: 1.05;
     }
 }
@@ -30,10 +39,10 @@
     background-color: white;
     color: var(--c-primary);
     border: 1px solid var(--c-primary);
+    background-image: linear-gradient(0deg, var(--c-primary-light) 50%, white 50%);
 
     &:hover, &:focus {
-        background-color: var(--c-primary);
-        color: white;
+        scale: unset;
     }
 }
 
