@@ -12,8 +12,8 @@
       <div class="personal__container" ref="personalContainer" tabindex="0">
         <div class="personal__title text-xs">Annelies Vaandrager</div>
         <!-- <img class="personal__picture" src="./../assets/img/me.png" /> -->
-        <!-- <img class="personal__picture" src="./../assets/img/me_compressed.png" /> -->
-        <img class="personal__picture" src="./../assets/img/me_compressed_even_more.png" />
+        <img class="personal__picture" src="./../assets/img/me_compressed.png" />
+        <!-- <img class="personal__picture" src="./../assets/img/me_compressed_even_more.png" /> -->
       </div>
     </div>
     <div class="title-creative-developer">
