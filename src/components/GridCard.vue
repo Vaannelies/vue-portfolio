@@ -1,6 +1,6 @@
 <template>
     <div @keydown.left="selectedIndex == null ? switchGridCard($event, false) : decreaseSelection()" @keydown.right="selectedIndex == null ? switchGridCard($event, true) : increaseSelection()" tabindex="0" class="grid__card" @focusin="toggleGridCard($event, true)" @blur="toggleGridCard($event, false)" :style="'background-image: url(\''+backgroundImage+'\')'">
-        <div class="grid__card-content__wrapper">
+        <div class="grid__card-content__wrapper spacing-gap-s">
             <h2 class="grid__card-title text-l">{{ title }}</h2>
             <p class="grid__card-subtitle text-xs">{{ description }}</p>
             <div v-if="disableUnfold" class="grid__card-hover-text text-xs">
@@ -14,8 +14,8 @@
               <div class="grid__card__list-item__content-wrapper">
                 <ul class="grid__card__media-list" v-if="media !== null">
                     <li class="grid__card__media-item" v-for="(item, index) in media" v-bind:key="index" @click="selectedIndex = index">
-                      <video v-if="item.type == 'video'" muted :src="item.thumbnailPath || item.path" type="video/mp4" loading="lazy" />
-                      <img v-else-if="item.type == 'image'" :src="item.thumbnailPath || item.path" loading="lazy" />
+                      <video v-if="item.type == 'video'" muted :src="item.path" type="video/mp4" loading="lazy" />
+                      <img v-else-if="item.type == 'image'" :src="item.path" loading="lazy" />
                       <iframe v-else @click="selectedIndex = index" width="80" height="80" :src="item.path" title="YouTube video player" frameborder="0" disabled referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
                     </li>
                 </ul>
