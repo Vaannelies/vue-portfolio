@@ -7,15 +7,15 @@
             </div>
             <div class="hobby__card hobby__card--travel" tabindex="0">
               <p class="hobby__card-title title-s">travel</p>
-              <img src="../assets/img/hobby_vector_travel.svg"/>
+              <img src="../assets/img/hobby_vector_travel.svg" loading="lazy"/>
             </div>
             <div class="hobby__card hobby__card--coding" tabindex="0">
               <p class="hobby__card-title title-s">coding</p>
-              <img src="../assets/img/hobby_vector_coding.svg"/>
+              <img src="../assets/img/hobby_vector_coding.svg" loading="lazy"/>
             </div>
             <div class="hobby__card hobby__card--craft" tabindex="0">
               <p class="hobby__card-title title-s">craft</p>
-              <img src="../assets/img/hobby_vector_craft.svg"/>
+              <img src="../assets/img/hobby_vector_craft.svg" loading="lazy"/>
             </div>
         </div>
     </section-component>
